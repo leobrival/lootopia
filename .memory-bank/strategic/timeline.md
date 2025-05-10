@@ -18,9 +18,9 @@
 
 XS: Très petit, quelques heures (0,5-1 jour)
 S: Petit (1-2 jours)
-M: Moyen (3-5 jours)
-L: Grand (1-2 semaines)
-XL: Très grand (2+ semaines, à décomposer)
+M: Moyen (2-4 jours)
+L: Grand (4-5 jours)
+XL: Très grand (5-7 jours)
 
 Combien de temps pour faire le MVP au complet ? Et avec un équipes de combien de personnes ?
 

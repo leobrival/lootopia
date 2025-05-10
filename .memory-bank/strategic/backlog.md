@@ -12,6 +12,7 @@ Later: Mettre en avant l'aspect communautaire et la collaboration avec des parte
 
 Estimation: XS
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Se connecter à son compte
 
@@ -19,6 +20,7 @@ Priorité: Must
 
 Estimation: XS
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Personnaliser son profil
 
@@ -26,6 +28,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Récupérer son mot de passe oublié
 
@@ -33,6 +36,7 @@ Priorité: Should
 
 Estimation: XS
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Me connecter via Google/Facebook
 
@@ -40,6 +44,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Modifier mes informations personnelles
 
@@ -47,6 +52,7 @@ Priorité: Should
 
 Estimation: XS
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Supprimer mon compte
 
@@ -54,6 +60,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Gérer mes paramètres de confidentialité
 
@@ -61,6 +68,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Voir mon historique de chasses
 
@@ -68,6 +76,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Lier mes réseaux sociaux à mon profil
 
@@ -75,6 +84,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 ### Epic: Onboarding & Tutoriel
 
@@ -84,6 +94,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Must
+Type: Front
 
 #### User Story: Apprendre à créer ma première cache
 
@@ -91,6 +102,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Could
+Type: Front
 
 #### User Story: Comprendre le système de récompenses
 
@@ -98,6 +110,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Front
 
 #### User Story: Savoir comment compléter une chasse
 
@@ -105,6 +118,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Must
+Type: Front
 
 #### User Story: Découvrir les fonctionnalités de base
 
@@ -112,6 +126,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Must
+Type: Front
 
 #### User Story: Accéder aux tutoriels à tout moment
 
@@ -119,6 +134,7 @@ Priorité: Must
 
 Estimation: XS
 Priorité: Should
+Type: Front
 
 #### User Story: Conseils contextuels durant mes premières actions
 
@@ -126,6 +142,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front
 
 #### User Story: FAQ des questions communes
 
@@ -133,6 +150,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Could
+Type: Front
 
 #### User Story: Des vidéos explicatives
 
@@ -140,6 +158,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front
 
 #### User Story: Passer le tutoriel si je suis déjà familier
 
@@ -147,6 +166,7 @@ Priorité: Could
 
 Estimation: XS
 Priorité: Should
+Type: Front
 
 ### Epic: Système de niveau et d'expérience
 
@@ -156,6 +176,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Monter de niveau grâce à mes actions
 
@@ -163,6 +184,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Voir ma progression actuelle
 
@@ -170,8 +192,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Must
-
-En tant qu'utilisateur, je veux voir ma progression actuelle (S, Must)
+Type: Front
 
 #### User Story: Débloquer de nouvelles fonctionnalités avec mon niveau
 
@@ -179,6 +200,7 @@ En tant qu'utilisateur, je veux voir ma progression actuelle (S, Must)
 
 Estimation: M
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Consulter les avantages du niveau suivant
 
@@ -186,6 +208,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Front
 
 #### User Story: Des défis quotidiens pour gagner de l'XP
 
@@ -193,6 +216,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Compare mon niveau avec d'autres joueurs
 
@@ -200,6 +224,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Des badges pour mes accomplissements
 
@@ -207,6 +232,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Historique de mes points gagnés
 
@@ -214,6 +240,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Récompenses spéciales à certains paliers
 
@@ -221,6 +248,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Back + Front
 
 ### Epic: Récompenses quotidiennes (Flamme Snapchat)
 
@@ -230,6 +258,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Un calendrier de récompenses progressives
 
@@ -237,6 +266,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Être notifié de ma récompense disponible
 
@@ -244,6 +274,7 @@ Priorité: Should
 
 Estimation: XS
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Des bonus pour les connexions consécutives
 
@@ -251,6 +282,7 @@ Priorité: Should
 
 Estimation: XS
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Voir le temps restant avant la prochaine récompense
 
@@ -258,6 +290,7 @@ Priorité: Should
 
 Estimation: XS
 Priorité: Should
+Type: Front
 
 #### User Story: Des récompenses spéciales les week-ends
 
@@ -265,6 +298,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Rattraper une récompense manquée
 
@@ -272,6 +306,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Échanger des récompenses contre d'autres items
 
@@ -279,6 +314,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Won't
+Type: Back + Front
 
 #### User Story: Partager mes récompenses sur les réseaux sociaux
 
@@ -286,6 +322,7 @@ Priorité: Won't
 
 Estimation: S
 Priorité: Could
+Type: Front
 
 #### User Story: Des récompenses exclusives lors d'événements
 
@@ -293,6 +330,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back + Front
 
 ### Epic: Système de notifications
 
@@ -302,6 +340,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Être alerté des nouvelles chasses près de moi
 
@@ -309,6 +348,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Recevoir des notifications push sur mon téléphone
 
@@ -316,6 +356,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Personnaliser les types de notifications reçues
 
@@ -323,6 +364,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Should
+Type: Back + Front
 
 #### User Story: être notifié des récompenses disponibles
 
@@ -330,6 +372,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 #### User Story: être informé des messages reçus
 
@@ -337,6 +380,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Voir un centre de notifications dans l'app
 
@@ -344,6 +388,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Must
+Type: Front
 
 #### User Story: Désactiver temporairement les notifications
 
@@ -351,6 +396,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Recevoir des notifications par email
 
@@ -358,6 +404,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Back
 
 #### User Story: être notifié des mises à jour importantes
 
@@ -365,6 +412,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 ### Epic: Dashboard global (Metrics)
 
@@ -374,6 +422,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Consulter ma distance totale parcourue
 
@@ -381,6 +430,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Visualiser mes statistiques sous forme de graphiques
 
@@ -388,6 +438,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Front
 
 #### User Story: Voir mon classement parmi les autres joueurs
 
@@ -395,6 +446,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back + Front
 
 #### User Story: Consulter mes artefacts collectionnés
 
@@ -402,6 +454,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Suivre mes objectifs personnels
 
@@ -409,6 +462,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Voir mes réalisations récentes
 
@@ -416,6 +470,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Should
+Type: Back + Front
 
 #### User Story: Exporter mes statistiques
 
@@ -423,6 +478,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Won't
+Type: Back + Front
 
 #### User Story: Personnaliser mon tableau de bord
 
@@ -430,6 +486,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Won't
+Type: Front
 
 #### User Story: Des suggestions basées sur mes statistiques
 
@@ -437,6 +494,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Could
+Type: Back + Front
 
 ## THEME: Création & Gestion de contenu
 
@@ -448,6 +506,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Must
+Type: Back + Front
 
 #### User Story: Définir l'emplacement d'une cache sur la carte
 
@@ -455,6 +514,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Must
+Type: Front
 
 #### User Story: Ajouter des indices pour ma chasse
 
@@ -462,6 +522,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Associer une énigme à ma cache
 
@@ -469,6 +530,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Définir la difficulté de ma chasse
 
@@ -476,6 +538,7 @@ Priorité: Must
 
 Estimation: XS
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Ajouter des photos à ma cache
 
@@ -483,6 +546,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Prévisualiser ma chasse avant publication
 
@@ -490,6 +554,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front
 
 #### User Story: Modifier une chasse existante
 
@@ -497,6 +562,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Dupliquer une chasse existante
 
@@ -504,6 +570,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Définir un rayon de proximité pour ma cache
 
@@ -511,6 +578,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 ### Epic: Création de chasses personnalisées
 
@@ -520,6 +588,7 @@ Priorité: Must
 
 Estimation: L
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Définir un parcours spécifique pour ma chasse
 
@@ -527,6 +596,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Intégrer des éléments de réalité augmentée
 
@@ -534,6 +604,7 @@ Priorité: Should
 
 Estimation: XL
 Priorité: Could
+Type: Front
 
 #### User Story: Ajouter des conditions temporelles
 
@@ -541,6 +612,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Personnaliser l'apparence visuelle de ma chasse
 
@@ -548,6 +620,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front
 
 #### User Story: Définir des récompenses spécifiques
 
@@ -555,6 +628,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Limiter ma chasse à un groupe spécifique
 
@@ -562,6 +636,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Créer une chasse thématique
 
@@ -569,6 +644,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Ajouter du contenu audio à ma chasse
 
@@ -576,6 +652,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Créer une chasse éducative avec quiz
 
@@ -583,6 +660,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 ### Epic: Gestion des énigmes
 
@@ -592,6 +670,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Associer des indices visuels à mes énigmes
 
@@ -599,6 +678,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Choisir parmi des modèles d'énigmes prédéfinis
 
@@ -606,6 +686,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Définir plusieurs niveaux d'indices
 
@@ -613,6 +694,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Créer des énigmes avec plusieurs solutions valides
 
@@ -620,6 +702,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Tester la résolution de mon énigme
 
@@ -627,6 +710,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Importer des énigmes existantes
 
@@ -634,6 +718,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Noter la difficulté perçue des énigmes
 
@@ -641,6 +726,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Créer des énigmes qui nécessitent l'observation du lieu réel
 
@@ -648,6 +734,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Un historique de mes énigmes créées
 
@@ -655,6 +742,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 ### Epic: Modération du contenu (Utilisateur)
 
@@ -664,6 +752,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Noter la qualité des chasses complétées
 
@@ -671,6 +760,7 @@ Priorité: Must
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Laisser un commentaire sur une chasse
 
@@ -678,6 +768,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Signaler une cache introuvable
 
@@ -685,6 +776,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Contester une modération
 
@@ -692,6 +784,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Voir l'état de modération de mes chasses
 
@@ -699,6 +792,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Recevoir des notifications de modération
 
@@ -706,6 +800,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Filtrer les chasses par évaluation
 
@@ -713,6 +808,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Voir les règles de modération
 
@@ -720,6 +816,7 @@ Priorité: Could
 
 Estimation: XS
 Priorité: Must
+Type: Front
 
 #### User Story: Système de reconnaissance des contributeurs fiables
 
@@ -727,6 +824,7 @@ Priorité: Must
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 ## THEME: Écosystème & économique
 
@@ -738,6 +836,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Gagner de la monnaie en complétant des chasses
 
@@ -745,6 +844,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Must
+Type: Back
 
 #### User Story: Dépenser ma monnaie pour des objets virtuels
 
@@ -752,6 +852,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Consulter l'historique de mes transactions
 
@@ -759,6 +860,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Transférer de la monnaie à d'autres utilisateurs
 
@@ -766,6 +868,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Acheter de la monnaie avec de l'argent réel
 
@@ -773,6 +876,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Des notifications pour mes transactions
 
@@ -780,6 +884,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Sécuriser mon wallet avec authentification
 
@@ -787,6 +892,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Must
+Type: Front + Back
 
 #### User Story: Récupérer mon wallet en cas de perte d'accès
 
@@ -794,6 +900,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Must
+Type: Back
 
 #### User Story: Définir des limites de dépenses
 
@@ -801,6 +908,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 ### Epic: Blockchain & NFT
 
@@ -810,6 +918,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Should
+Type: Front + Back + Blockchain
 
 #### User Story: Voir ma collection d'artefacts
 
@@ -817,6 +926,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Blockchain
 
 #### User Story: Obtenir un certificat d'authenticité pour mes découvertes
 
@@ -824,6 +934,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Back + Blockchain
 
 #### User Story: Échanger des artefacts avec d'autres joueurs
 
@@ -831,6 +942,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back + Blockchain
 
 #### User Story: Connecter un wallet externe
 
@@ -838,6 +950,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Blockchain
 
 #### User Story: Comprendre la valeur de mes NFT
 
@@ -845,6 +958,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Blockchain
 
 #### User Story: Artefacts à édition limitée
 
@@ -852,6 +966,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back + Blockchain
 
 #### User Story: Recevoir des NFT pour des événements spéciaux
 
@@ -859,6 +974,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Won't
+Type: Back + Blockchain
 
 #### User Story: Exporter mes NFT vers d'autres plateformes
 
@@ -866,6 +982,7 @@ Priorité: Won't
 
 Estimation: XL
 Priorité: Won't
+Type: Back + Blockchain
 
 #### User Story: Voir l'historique de propriété d'un artefact
 
@@ -873,6 +990,7 @@ Priorité: Won't
 
 Estimation: M
 Priorité: Could
+Type: Front + Blockchain
 
 ### Epic: Cartes cadeaux & Échanges
 
@@ -882,6 +1000,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Voir les cartes cadeaux disponibles
 
@@ -889,6 +1008,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Recevoir ma carte cadeau par email
 
@@ -896,6 +1016,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back
 
 #### User Story: Offrir une carte cadeau à un ami
 
@@ -903,6 +1024,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Échanger des points contre des réductions chez des partenaires
 
@@ -910,6 +1032,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Être notifié des nouvelles offres d'échange
 
@@ -917,6 +1040,7 @@ Priorité: Won't
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Consulter l'historique de mes échanges
 
@@ -924,6 +1048,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Annuler un échange en cours
 
@@ -931,6 +1056,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Des promotions sur les échanges lors d'événements
 
@@ -938,6 +1064,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Un système de liste de souhaits pour futures récompenses
 
@@ -945,6 +1072,7 @@ Priorité: Won't
 
 Estimation: M
 Priorité: Won't
+Type: Front + Back
 
 ### Epic: Système de récompenses
 
@@ -954,6 +1082,7 @@ Priorité: Won't
 
 Estimation: M
 Priorité: Must
+Type: Back
 
 #### User Story: Des récompenses basées sur mon niveau d'activité
 
@@ -961,6 +1090,7 @@ Priorité: Must
 
 Estimation: M
 Priorité: Should
+Type: Back
 
 #### User Story: Être récompensé pour la création de chasses populaires
 
@@ -968,6 +1098,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Back
 
 #### User Story: Un système de récompenses progressives
 
@@ -975,6 +1106,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Back
 
 #### User Story: Recevoir des récompenses exclusives lors d'événements
 
@@ -982,6 +1114,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Back
 
 #### User Story: Un catalogue des récompenses disponibles
 
@@ -989,6 +1122,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Échanger des récompenses mineures contre de meilleures
 
@@ -996,6 +1130,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Partager mes récompenses sur les réseaux sociaux
 
@@ -1003,6 +1138,7 @@ Priorité: Could
 
 Estimation: S
 Priorité: Could
+Type: Front
 
 #### User Story: Voir mon progression vers la prochaine récompense
 
@@ -1010,6 +1146,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Des défis spéciaux avec des récompenses uniques
 
@@ -1017,6 +1154,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 ## THEME: Partenariats & Business
 
@@ -1028,6 +1166,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Analyser l'engagement des utilisateurs
 
@@ -1035,6 +1174,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Suivre les conversions de mes promotions
 
@@ -1042,6 +1182,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Personnaliser mon espace partenaire
 
@@ -1049,6 +1190,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front
 
 #### User Story: Générer des rapports détaillés
 
@@ -1056,6 +1198,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Définir des objectifs mesurables
 
@@ -1063,6 +1206,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Compare mes performances avec des benchmarks
 
@@ -1070,6 +1214,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Gérer mon équipe avec différents accès
 
@@ -1077,6 +1222,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Voir les données démographiques des participants
 
@@ -1084,6 +1230,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Exporter mes données statistiques
 
@@ -1091,6 +1238,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 ### Epic: Promotion & Acquisition utilisateurs
 
@@ -1100,6 +1248,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Proposer des bonus aux nouveaux utilisateurs
 
@@ -1107,6 +1256,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Personnaliser une page d'atterrissage
 
@@ -1114,6 +1264,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front
 
 #### User Story: Des outils de partage sur réseaux sociaux
 
@@ -1121,6 +1272,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front
 
 #### User Story: Suivre l'origine des utilisateurs acquis
 
@@ -1128,6 +1280,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Des modèles d'emails promotionnels
 
@@ -1135,6 +1288,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Organiser des événements spéciaux
 
@@ -1142,6 +1296,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Cibler des utilisateurs par zone géographique
 
@@ -1149,6 +1304,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Des QR codes personnalisés pour mes promotions
 
@@ -1156,6 +1312,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Créer des défis exclusifs pour ma marque
 
@@ -1163,6 +1320,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 ### Epic: Gestion des campagnes
 
@@ -1172,6 +1330,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Définir la durée de ma campagne
 
@@ -1179,6 +1338,7 @@ Priorité: Should
 
 Estimation: S
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Cibler des segments d'utilisateurs spécifiques
 
@@ -1186,6 +1346,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Suivre les métriques de ma campagne en temps réel
 
@@ -1193,6 +1354,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Programmer des actions automatisées
 
@@ -1200,6 +1362,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Back
 
 #### User Story: Personnaliser les messages de ma campagne
 
@@ -1207,6 +1370,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Should
+Type: Front + Back
 
 #### User Story: Dupliquer une campagne existante
 
@@ -1214,6 +1378,7 @@ Priorité: Should
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Compare les performances de différentes campagnes
 
@@ -1221,6 +1386,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Intégrer mes campagnes à mes autres outils marketing
 
@@ -1228,6 +1394,7 @@ Priorité: Won't
 
 Estimation: XL
 Priorité: Won't
+Type: Back
 
 #### User Story: Recevoir des alertes sur les performances
 
@@ -1235,6 +1402,7 @@ Priorité: Won't
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 ### Epic: Programme d'affiliation
 
@@ -1244,6 +1412,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Générer des liens de parrainage
 
@@ -1251,6 +1420,7 @@ Priorité: Won't
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Suivre mes commissions
 
@@ -1258,6 +1428,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Voir les statistiques de mes conversions
 
@@ -1265,6 +1436,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Recevoir des paiements pour mes commissions
 
@@ -1272,6 +1444,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Won't
+Type: Back
 
 #### User Story: Des outils promotionnels personnalisés
 
@@ -1279,6 +1452,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Des niveaux progressifs dans le programme
 
@@ -1286,6 +1460,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Won't
+Type: Back
 
 #### User Story: Être notifié des nouvelles opportunités
 
@@ -1293,6 +1468,7 @@ Priorité: Won't
 
 Estimation: M
 Priorité: Won't
+Type: Front + Back
 
 #### User Story: Entrer un code de parrainage
 
@@ -1300,6 +1476,7 @@ Priorité: Won't
 
 Estimation: S
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Un tableau de bord dédié à mon activité
 
@@ -1307,6 +1484,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Won't
+Type: Front + Back
 
 ### Epic: Rapports de performance
 
@@ -1316,6 +1494,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Should
+Type: Back
 
 #### User Story: Visualiser les données avec des graphiques
 
@@ -1323,6 +1502,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Should
+Type: Front
 
 #### User Story: Des analyses comparatives par période
 
@@ -1330,6 +1510,7 @@ Priorité: Should
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Filtrer mes rapports selon différents critères
 
@@ -1337,6 +1518,7 @@ Priorité: Could
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Exporter mes rapports en différents formats
 
@@ -1344,6 +1526,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Programmer l'envoi automatique de rapports
 
@@ -1351,6 +1534,7 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Back
 
 #### User Story: Des insights basés sur mes données
 
@@ -1358,6 +1542,7 @@ Priorité: Could
 
 Estimation: XL
 Priorité: Won't
+Type: Back
 
 #### User Story: Des suggestions d'optimisation basées sur mes performances
 
@@ -1365,6 +1550,7 @@ Priorité: Won't
 
 Estimation: XL
 Priorité: Won't
+Type: Back
 
 #### User Story: Personnaliser mes métriques clés
 
@@ -1372,6 +1558,7 @@ Priorité: Won't
 
 Estimation: L
 Priorité: Could
+Type: Front + Back
 
 #### User Story: Partager mes rapports avec mon équipe
 
@@ -1379,3 +1566,4 @@ Priorité: Could
 
 Estimation: M
 Priorité: Could
+Type: Front + Back
