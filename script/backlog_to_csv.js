@@ -90,6 +90,7 @@ for (let line of lines) {
 
 function escapeCsv(val) {
   if (val == null) return "";
+  val = String(val); // always treat as string
   if (val.includes(",") || val.includes('"') || val.includes("\n")) {
     return '"' + val.replace(/"/g, '""') + '"';
   }
@@ -106,9 +107,39 @@ const header = [
   "Type",
   "Capabilities",
   "Dépendances",
+  "Nb dépendances",
+  "Nb dépendants",
 ];
+
+// Build a map titre -> dépendants count
+const titreToDependants = {};
+rows.forEach((row) => {
+  const titre = row[3];
+  titreToDependants[titre] = 0;
+});
+rows.forEach((row) => {
+  const dependances = (row[8] || "")
+    .split(/;|,/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  dependances.forEach((dep) => {
+    if (dep && titreToDependants[dep] !== undefined) {
+      titreToDependants[dep]++;
+    }
+  });
+});
+
 const csv = [header.map(escapeCsv).join(",")]
-  .concat(rows.map((row) => row.map(escapeCsv).join(",")))
+  .concat(
+    rows.map((row) => {
+      const dependances = row[8] || "";
+      const nbDep = dependances
+        ? dependances.split(/;|,/).filter(Boolean).length
+        : 0;
+      const nbDependants = titreToDependants[row[3]] || 0;
+      return row.concat(nbDep, nbDependants).map(escapeCsv).join(",");
+    })
+  )
   .join("\n");
 
 fs.writeFileSync(CSV_OUT, csv, "utf-8");

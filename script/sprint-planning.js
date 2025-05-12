@@ -12,6 +12,8 @@ const records = readBacklogCsv();
 // 1. On prépare les US avec toutes les infos utiles
 const usList = extractUserStories(records);
 
+console.log(usList.map((u) => [u.titre, u.priorite]));
+
 // 2. On trie d'abord par estimation au sein de chaque Epic, puis par priorité globale
 const prioOrder = { must: 1, should: 2, could: 3, "won't": 4 };
 const sizeOrder = { XS: 1, S: 2, M: 3, L: 4, XL: 5 };
@@ -94,29 +96,30 @@ function getUsLoadByRole(us) {
   return load;
 }
 
-for (let sprintNum = 1; sprintNum <= 12; sprintNum++) {
+let mvpMode = true;
+for (let sprintNum = 1; sprintNum <= 50; sprintNum++) {
   let sprint = [];
   let sprintLoad = { front: 0, back: 0, blockchain: 0 };
   let backlogLeft = [...backlog];
   let added = true;
   while (added) {
     added = false;
-    // Pour chaque spécialité, on essaie de remplir la capacité
     for (const role of Object.keys(teamCapacity)) {
-      // US dispo pour ce rôle, dépendances OK, pas déjà dans le sprint
+      // --- MVP ONLY ---
       let available = backlogLeft.filter(
         (us) =>
           !sprint.includes(us) &&
           getUsLoadByRole(us)[role] &&
-          us.dependances.every((dep) => done.has(dep))
+          us.dependances.every((dep) => done.has(dep)) &&
+          (!mvpMode ||
+            ["must", "should"].includes(
+              (us.priorite || "").toLowerCase().trim()
+            ))
       );
+      // --- END MVP ONLY ---
       for (let i = 0; i < available.length; i++) {
         const us = available[i];
         const usLoad = getUsLoadByRole(us);
-        // Vérifie la capacité pour ce rôle
-        if ((sprintLoad[role] || 0) + (usLoad[role] || 0) > teamCapacity[role])
-          continue;
-        // Vérifie la capacité pour les autres rôles impliqués dans l'US
         let fits = true;
         for (const r of Object.keys(usLoad)) {
           if ((sprintLoad[r] || 0) + (usLoad[r] || 0) > teamCapacity[r]) {
@@ -132,33 +135,21 @@ for (let sprintNum = 1; sprintNum <= 12; sprintNum++) {
         done.add(us.titre);
         backlogLeft = backlogLeft.filter((u) => u.idx !== us.idx);
         added = true;
-        break; // On repart sur la boucle pour ce rôle
+        break;
       }
     }
   }
-  // On retire du backlog global les US du sprint
   backlog = backlog.filter((u) => !sprint.includes(u));
-
-  // --- PATCH: tri topologique pour l'ordre des dépendances dans le sprint ---
-  function topoSort(usArray) {
-    const titreToUs = Object.fromEntries(usArray.map((u) => [u.titre, u]));
-    const visited = new Set();
-    const result = [];
-    function visit(u) {
-      if (visited.has(u.titre)) return;
-      for (const dep of u.dependances) {
-        if (titreToUs[dep]) visit(titreToUs[dep]);
-      }
-      visited.add(u.titre);
-      result.push(u);
-    }
-    for (const u of usArray) visit(u);
-    return result;
-  }
-  sprint = topoSort(sprint);
-  // --- END PATCH ---
-
   sprints.push({ us: sprint, load: sprintLoad });
+  // --- switch to full backlog when MVP is done ---
+  if (
+    mvpMode &&
+    backlog.filter((us) =>
+      ["must", "should"].includes((us.priorite || "").toLowerCase().trim())
+    ).length === 0
+  ) {
+    mvpMode = false;
+  }
   if (backlog.length === 0) break;
 }
 
@@ -194,11 +185,27 @@ const csvRows = [
     "Estimation",
     "Priorité",
     "Dépendances",
+    "Nb dépendances",
+    "Nb dépendants",
   ].join(","),
 ];
+// Build a map titre -> dépendants count pour le backlog courant
+const titreToDependants = {};
+usList.forEach((us) => {
+  titreToDependants[us.titre] = 0;
+});
+usList.forEach((us) => {
+  (us.dependances || []).forEach((dep) => {
+    if (dep && titreToDependants[dep] !== undefined) {
+      titreToDependants[dep]++;
+    }
+  });
+});
 sprints.slice(0, 12).forEach((sprint, i) => {
   sprint.us.forEach((us) => {
     const usLoad = getUsLoadByRole(us);
+    const nbDep = (us.dependances || []).length;
+    const nbDependants = titreToDependants[us.titre] || 0;
     for (const role of Object.keys(usLoad)) {
       csvRows.push(
         [
@@ -210,6 +217,8 @@ sprints.slice(0, 12).forEach((sprint, i) => {
           us.estimation,
           us.priorite,
           `"${(us.dependances || []).join("; ")}"`,
+          nbDep,
+          nbDependants,
         ].join(",")
       );
     }
@@ -218,3 +227,48 @@ sprints.slice(0, 12).forEach((sprint, i) => {
 
 fs.writeFileSync("sprint-planning.csv", csvRows.join("\n"), "utf8");
 console.log("\nExport CSV : sprint-planning.csv");
+
+// --- MVP completion sprint ---
+function normalize(str) {
+  return (str || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
+const mustShould = usList.filter(
+  (us) =>
+    (us.priorite || "").toLowerCase().trim() === "must" ||
+    (us.priorite || "").toLowerCase().trim() === "should"
+);
+const mustShouldTitles = new Set(mustShould.map((u) => normalize(u.titre)));
+console.log("Titres mustShould uniques:", mustShouldTitles.size);
+console.log("Titres mustShould total:", mustShould.length);
+let doneUS = new Set();
+let mvpSprint = 0;
+for (let i = 0; i < sprints.length; i++) {
+  for (const us of sprints[i].us) {
+    if (mustShouldTitles.has(normalize(us.titre))) {
+      doneUS.add(normalize(us.titre));
+    }
+  }
+  console.log(
+    `Sprint ${i + 1}: ${doneUS.size}/${
+      mustShouldTitles.size
+    } US Must+Should complétées`
+  );
+  if (doneUS.size === mustShouldTitles.size) {
+    mvpSprint = i + 1;
+    break;
+  }
+}
+if (doneUS.size !== mustShouldTitles.size) {
+  const missing = [...mustShouldTitles].filter((t) => !doneUS.has(t));
+  console.log(
+    `US Must+Should manquantes après ${sprints.length} sprints:`,
+    missing
+  );
+}
+console.log(
+  `\nLe MVP (Must + Should) est complété à la fin du sprint ${mvpSprint}.`
+);
