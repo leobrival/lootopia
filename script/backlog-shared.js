@@ -14,8 +14,8 @@ const SPRINT_HOURS = 40;
 
 // Composition de l'équipe de développement
 const team = {
-  front: 1, // nombre de dev front
-  back: 1, // nombre de dev back
+  front: 2, // nombre de dev front
+  back: 2, // nombre de dev back
   blockchain: 1, // nombre de dev blockchain
   // Ajoute d'autres rôles si besoin
 };

@@ -36,18 +36,40 @@ for (const epic of Object.keys(epicGroups)) {
   usListOrdered = usListOrdered.concat(epicGroups[epic]);
 }
 
-// Puis on trie globalement par priorité
-usListOrdered.sort((a, b) => {
+// --- PATCH: score de dépendance pour chaque US ---
+function computeDependencyScore(usList) {
+  // Map titre -> US
+  const titreToUs = Object.fromEntries(usList.map((u) => [u.titre, u]));
+  // Pour chaque US, compte combien d'US dépendent d'elle (direct ou indirect)
+  function countDependants(titre, visited = new Set()) {
+    if (visited.has(titre)) return 0;
+    visited.add(titre);
+    let count = 0;
+    for (const u of usList) {
+      if (u.dependances.includes(titre)) {
+        count += 1 + countDependants(u.titre, visited);
+      }
+    }
+    return count;
+  }
+  for (const us of usList) {
+    us.dependencyScore = countDependants(us.titre);
+  }
+}
+computeDependencyScore(usList);
+// Trie par score décroissant, puis priorité, puis estimation
+usList.sort((a, b) => {
   if (prioOrder[a.priorite] !== prioOrder[b.priorite])
     return prioOrder[a.priorite] - prioOrder[b.priorite];
-  // Si même priorité, garder l'ordre Epic/estimation
-  return 0;
+  if (sizeOrder[a.estimation] !== sizeOrder[b.estimation])
+    return sizeOrder[a.estimation] - sizeOrder[b.estimation];
+  return b.dependencyScore - a.dependencyScore;
 });
 
 // 3. Sprint planning avec gestion des dépendances
 let sprints = [];
 let done = new Set();
-let backlog = [...usListOrdered];
+let backlog = [...usList];
 
 const SPRINT_DAYS = 5;
 const HOURS_PER_DEV_PER_DAY = 8;
@@ -152,9 +174,9 @@ sprints.slice(0, 12).forEach((sprint, i) => {
   );
   sprint.us.forEach((us) => {
     console.log(
-      `- [${us.priorite.toUpperCase()}][${us.estimation}] ${us.titre} (${
-        us.epic
-      })`
+      `[${us.dependencyScore}] [${us.priorite.toUpperCase()}][${
+        us.estimation
+      }] ${us.titre} (${us.epic})`
     );
     if (us.dependances.length)
       console.log(`    Dépendances: ${us.dependances.join(", ")}`);
