@@ -482,7 +482,7 @@ Capabilities: [notification]
 
 - En tant qu'utilisateur, je veux recevoir des notifications push sur mon téléphone
 
-Estimation: M
+Estimation: S
 Priorité: Must
 Type: Back + Front
 Dépendances:

@@ -38,6 +38,27 @@ for (const epic of Object.keys(epicGroups)) {
   usListOrdered = usListOrdered.concat(epicGroups[epic]);
 }
 
+// --- Dépendance chain length (à placer AVANT usWithDependants) ---
+function getDependencyChainLength(us, titreToUs, visited = new Set()) {
+  if (visited.has(us.titre)) return 0;
+  visited.add(us.titre);
+  if (!us.dependances.length) return 0;
+  let maxDepth = 0;
+  for (const dep of us.dependances) {
+    const depUs = titreToUs[dep];
+    if (depUs) {
+      maxDepth = Math.max(
+        maxDepth,
+        1 + getDependencyChainLength(depUs, titreToUs, new Set(visited))
+      );
+    }
+  }
+  return maxDepth;
+}
+
+// --- Map titre -> US (à placer AVANT usWithDependants) ---
+const titreToUs = Object.fromEntries(usList.map((u) => [u.titre, u]));
+
 // --- PATCH: score de dépendance pour chaque US ---
 function computeDependencyScore(usList) {
   // Map titre -> US
@@ -67,6 +88,15 @@ usList.sort((a, b) => {
     return sizeOrder[a.estimation] - sizeOrder[b.estimation];
   return b.dependencyScore - a.dependencyScore;
 });
+
+// --- Calcul usWithDependants (utilisé plus bas) ---
+const usWithDependants = usList.map((us) => ({
+  titre: us.titre,
+  priorite: us.priorite,
+  estimation: us.estimation,
+  nbDependants: us.dependencyScore,
+  chainLen: getDependencyChainLength(us, titreToUs),
+}));
 
 // 3. Sprint planning avec gestion des dépendances
 let sprints = [];
@@ -272,3 +302,23 @@ if (doneUS.size !== mustShouldTitles.size) {
 console.log(
   `\nLe MVP (Must + Should) est complété à la fin du sprint ${mvpSprint}.`
 );
+
+// --- Focus sur les US avec chaîne de dépendances > 1 ---
+const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);
+usLongChains.sort((a, b) => b.chainLen - a.chainLen);
+console.log(
+  "\n--- TOP 5 US avec la plus longue chaîne de dépendances (>1) ---"
+);
+usLongChains.slice(0, 5).forEach((us, idx) => {
+  console.log(
+    `${idx + 1}. [${us.priorite.toUpperCase()}][${us.estimation}] ${
+      us.titre
+    } : chaîne = ${us.chainLen}, dépendants = ${us.nbDependants}`
+  );
+});
+console.log("\n--- Suggestions de refacto pour ces chaînes critiques ---");
+usLongChains.slice(0, 5).forEach((us) => {
+  console.log(
+    `- ${us.titre} :\n  ➔ Suggestions :\n    • Découper l'US ou ses dépendances pour réduire la profondeur.\n    • Mocker les dépendances pour débloquer les suivantes.\n    • Revoir la nécessité de chaque dépendance (challenge métier/tech).\n    • Prioriser la livraison de cette US et de ses dépendances directes.`
+  );
+});
