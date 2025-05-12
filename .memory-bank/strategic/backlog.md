@@ -239,7 +239,7 @@ Capabilities: [gamification, reward, content-management]
 Estimation: M
 Priorité: Must
 Type: Back + Front
-Dépendances:
+Dépendances: Voir mon solde de monnaie virtuelle, Recevoir des notifications push sur mon téléphone, Créer une chasse au trésor simple
 
 #### User Story: Monter de niveau grâce à mes actions
 
@@ -498,7 +498,7 @@ Priorité: Should
 Type: Back + Front
 Dépendances: Recevoir des notifications push sur mon téléphone
 
-#### User Story: être notifié des récompenses disponibles
+#### User Story: Être notifié des récompenses disponibles
 
 Capabilities: [notification, reward]
 
@@ -509,7 +509,7 @@ Priorité: Should
 Type: Back + Front
 Dépendances: Recevoir une récompense pour ma connexion quotidienne, Recevoir des notifications push sur mon téléphone
 
-#### User Story: être informé des messages reçus
+#### User Story: Être informé des messages reçus
 
 Capabilities: [notification, social]
 
@@ -619,7 +619,7 @@ Capabilities: [analytics, blockchain]
 Estimation: M
 Priorité: Must
 Type: Back + Front
-Dépendances:
+Dépendances: Collecter des artefacts uniques (NFT), Voir le nombre total de chasses complétées
 
 #### User Story: Suivre mes objectifs personnels
 
@@ -1091,7 +1091,7 @@ Capabilities: [moderation, notification]
 Estimation: S
 Priorité: Should
 Type: Front + Back
-Dépendances: Signaler un contenu inapproprié
+Dépendances: Signaler un contenu inapproprié, Recevoir des notifications push sur mon téléphone
 
 #### User Story: Filtrer les chasses par évaluation
 
@@ -1150,7 +1150,7 @@ Capabilities: [wallet, reward, content-management]
 Estimation: M
 Priorité: Must
 Type: Back
-Dépendances:
+Dépendances: Voir mon solde de monnaie virtuelle, Recevoir des notifications push sur mon téléphone, Créer une chasse au trésor simple
 
 #### User Story: Dépenser ma monnaie pour des objets virtuels
 
@@ -1462,7 +1462,7 @@ Capabilities: [giftcard, reward]
 Estimation: M
 Priorité: Won't
 Type: Front + Back
-Dépendances:
+Dépendances: Voir les cartes cadeaux disponibles
 
 ### Epic: Système de récompenses
 
@@ -1497,7 +1497,7 @@ Capabilities: [reward, content-creation]
 Estimation: M
 Priorité: Should
 Type: Back
-Dépendances: Gagner des récompenses pour mes découvertes
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Un système de récompenses progressives
 
@@ -1969,7 +1969,7 @@ Capabilities: [partner, wallet]
 Estimation: L
 Priorité: Won't
 Type: Back
-Dépendances: Suivre mes commissions
+Dépendances: Générer des liens de parrainage, Voir mon solde de monnaie virtuelle, Suivre mes commissions
 
 #### User Story: Des outils promotionnels personnalisés
 

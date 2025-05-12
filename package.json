@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "csv-parse": "^5.6.0"
+  },
+  "scripts": {
+    "sprint-planning": "npm run backlog-to-csv && npm run check-dependencies && node script/sprint-planning.js",
+    "check-dependencies": "node script/check-dependencies.js",
+    "calc-backlog-time": "npm run backlog-to-csv && npm run check-dependencies && node script/calc-backlog-time.js",
+    "backlog-shared": "node script/backlog-shared.js",
+    "backlog-to-csv": "node script/backlog_to_csv.js"
   }
 }

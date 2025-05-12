@@ -1,191 +1,191 @@
-Theme,Epic,User Story,Estimation,Priorité,Type,Ressources
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux créer un compte avec email et mot de passe",XS,Must,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux me connecter à mon compte existant",XS,Must,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux personnaliser mon profil avec avatar et pseudo",S,Should,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux récupérer mon mot de passe oublié",XS,Must,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux me connecter via Google/Facebook",S,Should,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux modifier mes informations personnelles",XS,Should,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux supprimer mon compte",S,Could,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux gérer mes paramètres de confidentialité",M,Should,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux voir mon historique de chasses",M,Should,Front + Back,
-Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux lier mes réseaux sociaux à mon profil",S,Could,Front + Back,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux un tutoriel interactif pour comprendre le jeu",M,Must,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux apprendre à créer ma première cache",S,Could,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux comprendre le système de récompenses",S,Must,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux savoir comment compléter une chasse",S,Must,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux découvrir les fonctionnalités de base",S,Must,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux accéder aux tutoriels à tout moment",XS,Should,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux des conseils contextuels durant mes premières actions",M,Should,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux voir une FAQ des questions communes",S,Could,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux des vidéos explicatives",M,Could,Front,
-Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux passer le tutoriel si je suis déjà familier",XS,Should,Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux gagner des points d'expérience en complétant des chasses",M,Must,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux monter de niveau grâce à mes actions",M,Must,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux voir ma progression actuelle",S,Must,Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux débloquer de nouvelles fonctionnalités avec mon niveau",M,Should,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux consulter les avantages du niveau suivant",S,Should,Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux des défis quotidiens pour gagner de l'XP",M,Could,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux comparer mon niveau avec d'autres joueurs",M,Could,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux des badges pour mes accomplissements",M,Could,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux voir l'historique de mes points gagnés",S,Could,Back + Front,
-Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux des récompenses spéciales à certains paliers",M,Should,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux recevoir une récompense pour ma connexion quotidienne",S,Should,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux un calendrier de récompenses progressives",M,Should,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux être notifié de ma récompense disponible",XS,Should,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux des bonus pour les connexions consécutives",XS,Should,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux voir le temps restant avant la prochaine récompense",XS,Should,Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux des récompenses spéciales les week-ends",S,Could,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux rattraper une récompense manquée",M,Could,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux échanger des récompenses contre d'autres items",M,Won't,Back + Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux partager mes récompenses sur les réseaux sociaux",S,Could,Front,
-Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux des récompenses exclusives lors d'événements",M,Could,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être notifié quand quelqu'un trouve ma cache",S,Must,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être alerté des nouvelles chasses près de moi",S,Could,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux recevoir des notifications push sur mon téléphone",M,Must,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux personnaliser les types de notifications reçues",M,Should,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être notifié des récompenses disponibles",S,Should,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être informé des messages reçus",S,Should,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux voir un centre de notifications dans l'app",M,Must,Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux désactiver temporairement les notifications",S,Should,Back + Front,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux recevoir des notifications par email",M,Could,Back,
-Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être notifié des mises à jour importantes",S,Should,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux voir le nombre total de chasses complétées",S,Should,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux consulter ma distance totale parcourue",M,Should,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux visualiser mes statistiques sous forme de graphiques",M,Could,Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux voir mon classement parmi les autres joueurs",M,Could,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux consulter mes artefacts collectionnés",M,Must,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux suivre mes objectifs personnels",M,Must,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux voir mes réalisations récentes",S,Should,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux exporter mes statistiques",L,Won't,Back + Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux personnaliser mon tableau de bord",L,Won't,Front,
-Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux des suggestions basées sur mes statistiques",L,Could,Back + Front,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux créer une chasse au trésor simple",M,Must,Back + Front,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux définir l'emplacement d'une cache sur la carte",S,Must,Front,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux ajouter des indices pour ma chasse",S,Must,Front + Back,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux associer une énigme à ma cache",M,Must,Front + Back,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux définir la difficulté de ma chasse",XS,Must,Front + Back,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux ajouter des photos à ma cache",S,Should,Front + Back,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux prévisualiser ma chasse avant publication",M,Should,Front,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux modifier une chasse existante",M,Should,Front + Back,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux dupliquer une chasse existante",S,Could,Front + Back,
-Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux définir un rayon de proximité pour ma cache",S,Must,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux créer une chasse avec plusieurs étapes",L,Should,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux définir un parcours spécifique pour ma chasse",L,Should,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux intégrer des éléments de réalité augmentée",XL,Could,Front,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux ajouter des conditions temporelles",M,Could,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux personnaliser l'apparence visuelle de ma chasse",L,Could,Front,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux définir des récompenses spécifiques",M,Should,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux limiter ma chasse à un groupe spécifique",M,Should,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux créer une chasse thématique",M,Could,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux ajouter du contenu audio à ma chasse",M,Could,Front + Back,
-Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux créer une chasse éducative avec quiz",L,Could,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux créer des énigmes textuelles simples",S,Must,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux associer des indices visuels à mes énigmes",M,Should,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux choisir parmi des modèles d'énigmes prédéfinis",M,Should,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux définir plusieurs niveaux d'indices",M,Should,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux créer des énigmes avec plusieurs solutions valides",M,Could,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux tester la résolution de mon énigme",S,Must,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux importer des énigmes existantes",M,Could,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux noter la difficulté perçue des énigmes",S,Could,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux créer des énigmes qui nécessitent l'observation du lieu réel",M,Should,Front + Back,
-Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux un historique de mes énigmes créées",S,Could,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux signaler un contenu inapproprié",S,Must,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux noter la qualité des chasses complétées",S,Should,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux laisser un commentaire sur une chasse",S,Should,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux signaler une cache introuvable",S,Must,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux contester une modération",M,Should,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux voir l'état de modération de mes chasses",S,Should,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux recevoir des notifications de modération",S,Should,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux filtrer les chasses par évaluation",M,Could,Front + Back,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux voir les règles de modération",XS,Must,Front,
-Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux un système de reconnaissance des contributeurs fiables",L,Could,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux voir mon solde de monnaie virtuelle",S,Must,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux gagner de la monnaie en complétant des chasses",M,Must,Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux dépenser ma monnaie pour des objets virtuels",M,Should,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux consulter l'historique de mes transactions",M,Should,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux transférer de la monnaie à d'autres utilisateurs",L,Could,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux acheter de la monnaie avec de l'argent réel",L,Could,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux des notifications pour mes transactions",S,Should,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux sécuriser mon wallet avec authentification",M,Must,Front + Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux récupérer mon wallet en cas de perte d'accès",M,Must,Back,
-Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux définir des limites de dépenses",M,Could,Front + Back,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux collecter des artefacts uniques (NFT)",L,Should,Front + Back + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux voir ma collection d'artefacts",M,Should,Front + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux obtenir un certificat d'authenticité pour mes découvertes",M,Could,Back + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux échanger des artefacts avec d'autres joueurs",L,Could,Front + Back + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux connecter un wallet externe",L,Could,Front + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux comprendre la valeur de mes NFT",M,Could,Front + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux des artefacts à édition limitée",M,Could,Back + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux recevoir des NFT pour des événements spéciaux",M,Won't,Back + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux exporter mes NFT vers d'autres plateformes",XL,Won't,Back + Blockchain,
-Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux voir l'historique de propriété d'un artefact",M,Could,Front + Blockchain,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux échanger ma monnaie contre des cartes cadeaux",L,Could,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux voir les cartes cadeaux disponibles",M,Could,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux recevoir ma carte cadeau par email",M,Could,Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux offrir une carte cadeau à un ami",M,Could,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux échanger des points contre des réductions chez des partenaires",L,Won't,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux être notifié des nouvelles offres d'échange",S,Could,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux consulter l'historique de mes échanges",M,Could,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux annuler un échange en cours",M,Could,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux des promotions sur les échanges lors d'événements",M,Won't,Front + Back,
-Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux un système de liste de souhaits pour futures récompenses",M,Won't,Front + Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux gagner des récompenses pour mes découvertes",M,Must,Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux des récompenses basées sur mon niveau d'activité",M,Should,Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux être récompensé pour la création de chasses populaires",M,Should,Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux un système de récompenses progressives",M,Should,Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux recevoir des récompenses exclusives lors d'événements",M,Could,Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux un catalogue des récompenses disponibles",S,Should,Front + Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux échanger des récompenses mineures contre de meilleures",L,Could,Front + Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux partager mes récompenses sur les réseaux sociaux",S,Could,Front,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux voir mon progression vers la prochaine récompense",M,Should,Front + Back,
-Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux des défis spéciaux avec des récompenses uniques",L,Could,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux voir les statistiques de mes chasses",M,Should,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux analyser l'engagement des utilisateurs",L,Should,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux suivre les conversions de mes promotions",L,Could,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux personnaliser mon espace partenaire",M,Could,Front,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux générer des rapports détaillés",L,Could,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux définir des objectifs mesurables",M,Could,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux comparer mes performances avec des benchmarks",L,Won't,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux gérer mon équipe avec différents accès",L,Could,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux voir les données démographiques des participants",L,Could,Front + Back,
-Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux exporter mes données statistiques",M,Could,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux créer des codes promotionnels",M,Should,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux proposer des bonus aux nouveaux utilisateurs",M,Should,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux personnaliser une page d'atterrissage",L,Could,Front,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux des outils de partage sur réseaux sociaux",M,Should,Front,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux suivre l'origine des utilisateurs acquis",L,Could,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux des modèles d'emails promotionnels",M,Could,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux organiser des événements spéciaux",L,Could,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux cibler des utilisateurs par zone géographique",M,Could,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux des QR codes personnalisés pour mes promotions",M,Could,Front + Back,
-Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux créer des défis exclusifs pour ma marque",L,Won't,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux créer une campagne marketing liée à mes chasses",L,Should,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux définir la durée de ma campagne",S,Should,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux cibler des segments d'utilisateurs spécifiques",L,Could,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux suivre les métriques de ma campagne en temps réel",L,Could,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux programmer des actions automatisées",L,Could,Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux personnaliser les messages de ma campagne",M,Should,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux dupliquer une campagne existante",M,Could,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux comparer les performances de différentes campagnes",L,Won't,Front + Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux intégrer mes campagnes à mes autres outils marketing",XL,Won't,Back,
-Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux recevoir des alertes sur les performances",M,Could,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'utilisateur, je veux devenir affilié",M,Won't,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux générer des liens de parrainage",M,Could,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux suivre mes commissions",M,Won't,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux voir les statistiques de mes conversions",L,Won't,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux recevoir des paiements pour mes commissions",L,Won't,Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux des outils promotionnels personnalisés",L,Won't,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux des niveaux progressifs dans le programme",L,Won't,Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux être notifié des nouvelles opportunités",M,Won't,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'utilisateur, je veux entrer un code de parrainage",S,Could,Front + Back,
-Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux un tableau de bord dédié à mon activité",L,Won't,Front + Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des rapports hebdomadaires automatiques",L,Should,Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux visualiser les données avec des graphiques",L,Should,Front,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des analyses comparatives par période",L,Could,Front + Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux filtrer mes rapports selon différents critères",L,Could,Front + Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux exporter mes rapports en différents formats",M,Could,Front + Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux programmer l'envoi automatique de rapports",M,Could,Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des insights basés sur mes données",XL,Won't,Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des suggestions d'optimisation basées sur mes performances",XL,Won't,Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux personnaliser mes métriques clés",L,Could,Front + Back,
-Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux partager mes rapports avec mon équipe",M,Could,Front + Back,
+Theme,Epic,User Story,Titre,Estimation,Priorité,Type,Capabilities,Dépendances
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux créer un compte avec email et mot de passe",Créer un compte avec email et mot de passe,XS,Must,Front + Back,auth;profile,
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux me connecter à mon compte existant",Se connecter à son compte,XS,Must,Front + Back,auth,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux personnaliser mon profil avec avatar et pseudo",Personnaliser son profil,S,Should,Front + Back,profile,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux récupérer mon mot de passe oublié",Récupérer son mot de passe oublié,XS,Must,Front + Back,auth,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux me connecter via Google/Facebook",Me connecter via Google/Facebook,M,Could,Front + Back,auth;social,
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux modifier mes informations personnelles",Modifier mes informations personnelles,XS,Should,Front + Back,profile,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux supprimer mon compte",Supprimer mon compte,S,Could,Front + Back,auth;profile,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux gérer mes paramètres de confidentialité",Gérer mes paramètres de confidentialité,M,Should,Front + Back,profile,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux voir mon historique de chasses",Voir mon historique de chasses,M,Should,Front + Back,content-management;analytics,Créer un compte avec email et mot de passe
+Expérience joueur,Gestion des comptes & Profils (NFT Custom Avatar),"En tant qu'utilisateur, je veux lier mes réseaux sociaux à mon profil",Lier mes réseaux sociaux à mon profil,S,Could,Front + Back,profile;social,Créer un compte avec email et mot de passe
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux un tutoriel interactif pour comprendre le jeu",Tutoriel interactif pour comprendre le jeu,M,Must,Front,onboarding,
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux apprendre à créer ma première cache",Apprendre à créer ma première cache,S,Could,Front,onboarding;content-creation,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux comprendre le système de récompenses",Comprendre le système de récompenses,S,Must,Front,onboarding;reward,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux savoir comment compléter une chasse",Savoir comment compléter une chasse,S,Must,Front,onboarding;content-management,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux découvrir les fonctionnalités de base",Découvrir les fonctionnalités de base,S,Must,Front,onboarding,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux accéder aux tutoriels à tout moment",Accéder aux tutoriels à tout moment,XS,Should,Front,onboarding,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux des conseils contextuels durant mes premières actions",Conseils contextuels durant mes premières actions,M,Should,Front,onboarding,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux voir une FAQ des questions communes",FAQ des questions communes,S,Could,Front,onboarding,
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux des vidéos explicatives",Des vidéos explicatives,M,Could,Front,onboarding,
+Expérience joueur,Onboarding & Tutoriel,"En tant que nouvel utilisateur, je veux passer le tutoriel si je suis déjà familier",Passer le tutoriel si je suis déjà familier,XS,Should,Front,onboarding,Tutoriel interactif pour comprendre le jeu
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux gagner des points d'expérience en complétant des chasses",Gagner des points d'expérience en complétant des chasses,M,Must,Back + Front,gamification;reward;content-management,Voir mon solde de monnaie virtuelle;Recevoir des notifications push sur mon téléphone;Créer une chasse au trésor simple
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux monter de niveau grâce à mes actions",Monter de niveau grâce à mes actions,M,Must,Back + Front,gamification;reward,Gagner des points d'expérience en complétant des chasses
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux voir ma progression actuelle",Voir ma progression actuelle,S,Must,Front,gamification;analytics,Monter de niveau grâce à mes actions
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux débloquer de nouvelles fonctionnalités avec mon niveau",Débloquer de nouvelles fonctionnalités avec mon niveau,M,Should,Back + Front,gamification,Monter de niveau grâce à mes actions
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux consulter les avantages du niveau suivant",Consulter les avantages du niveau suivant,S,Should,Front,gamification,Monter de niveau grâce à mes actions
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux des défis quotidiens pour gagner de l'XP",Des défis quotidiens pour gagner de l'XP,M,Could,Back + Front,gamification;reward,Gagner des points d'expérience en complétant des chasses
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux comparer mon niveau avec d'autres joueurs",Compare mon niveau avec d'autres joueurs,M,Could,Back + Front,gamification;analytics;social,Monter de niveau grâce à mes actions
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux des badges pour mes accomplissements",Des badges pour mes accomplissements,M,Could,Back + Front,gamification;reward,Monter de niveau grâce à mes actions
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux voir l'historique de mes points gagnés",Historique de mes points gagnés,S,Could,Back + Front,gamification;analytics,Gagner des points d'expérience en complétant des chasses
+Expérience joueur,Système de niveau et d'expérience,"En tant qu'utilisateur, je veux des récompenses spéciales à certains paliers",Récompenses spéciales à certains paliers,M,Should,Back + Front,gamification;reward,Monter de niveau grâce à mes actions
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux recevoir une récompense pour ma connexion quotidienne",Recevoir une récompense pour ma connexion quotidienne,S,Should,Back + Front,reward;gamification,
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux un calendrier de récompenses progressives",Un calendrier de récompenses progressives,M,Should,Back + Front,reward;gamification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux être notifié de ma récompense disponible",Être notifié de ma récompense disponible,XS,Should,Back + Front,reward;notification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux des bonus pour les connexions consécutives",Des bonus pour les connexions consécutives,XS,Should,Back + Front,reward;gamification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux voir le temps restant avant la prochaine récompense",Voir le temps restant avant la prochaine récompense,XS,Should,Front,reward;gamification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux des récompenses spéciales les week-ends",Des récompenses spéciales les week-ends,S,Could,Back + Front,reward;gamification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux rattraper une récompense manquée",Rattraper une récompense manquée,M,Could,Back + Front,reward;gamification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux échanger des récompenses contre d'autres items",Échanger des récompenses contre d'autres items,M,Won't,Back + Front,reward,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux partager mes récompenses sur les réseaux sociaux",Partager mes récompenses sur les réseaux sociaux,S,Could,Front,reward;social,Recevoir une récompense pour ma connexion quotidienne;Lier mes réseaux sociaux à mon profil
+Expérience joueur,Récompenses quotidiennes (Flamme Snapchat),"En tant qu'utilisateur, je veux des récompenses exclusives lors d'événements",Des récompenses exclusives lors d'événements,M,Could,Back + Front,reward;gamification,Recevoir une récompense pour ma connexion quotidienne
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être notifié quand quelqu'un trouve ma cache",Être notifié quand quelqu'un trouve ma cache,S,Must,Back + Front,notification;content-management,Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être alerté des nouvelles chasses près de moi",Être alerté des nouvelles chasses près de moi,S,Could,Back + Front,notification;content-management,Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux recevoir des notifications push sur mon téléphone",Recevoir des notifications push sur mon téléphone,M,Must,Back + Front,notification,
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux personnaliser les types de notifications reçues",Personnaliser les types de notifications reçues,M,Should,Back + Front,notification,Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être notifié des récompenses disponibles",Être notifié des récompenses disponibles,S,Should,Back + Front,notification;reward,Recevoir une récompense pour ma connexion quotidienne;Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être informé des messages reçus",Être informé des messages reçus,S,Should,Back + Front,notification;social,Recevoir une récompense pour ma connexion quotidienne;Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux voir un centre de notifications dans l'app",Voir un centre de notifications dans l'app,M,Must,Front,notification,Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux désactiver temporairement les notifications",Désactiver temporairement les notifications,S,Should,Back + Front,notification,Recevoir des notifications push sur mon téléphone
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux recevoir des notifications par email",Recevoir des notifications par email,M,Could,Back,notification,
+Expérience joueur,Système de notifications,"En tant qu'utilisateur, je veux être notifié des mises à jour importantes",être notifié des mises à jour importantes,S,Should,Back + Front,notification,Recevoir des notifications push sur mon téléphone
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux voir le nombre total de chasses complétées",Voir le nombre total de chasses complétées,S,Should,Back + Front,analytics;content-management,
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux consulter ma distance totale parcourue",Consulter ma distance totale parcourue,M,Should,Back + Front,analytics,
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux visualiser mes statistiques sous forme de graphiques",Visualiser mes statistiques sous forme de graphiques,M,Could,Front,analytics,Voir le nombre total de chasses complétées
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux voir mon classement parmi les autres joueurs",Voir mon classement parmi les autres joueurs,M,Could,Back + Front,analytics;gamification;social,
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux consulter mes artefacts collectionnés",Consulter mes artefacts collectionnés,M,Must,Back + Front,analytics;blockchain,Collecter des artefacts uniques (NFT);Voir le nombre total de chasses complétées
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux suivre mes objectifs personnels",Suivre mes objectifs personnels,M,Must,Back + Front,analytics;gamification,
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux voir mes réalisations récentes",Voir mes réalisations récentes,S,Should,Back + Front,analytics;gamification,
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux exporter mes statistiques",Exporter mes statistiques,L,Won't,Back + Front,analytics,Visualiser mes statistiques sous forme de graphiques
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux personnaliser mon tableau de bord",Personnaliser mon tableau de bord,L,Won't,Front,analytics,Visualiser mes statistiques sous forme de graphiques
+Expérience joueur,Dashboard global (Metrics),"En tant qu'utilisateur, je veux des suggestions basées sur mes statistiques",Des suggestions basées sur mes statistiques,L,Could,Back + Front,analytics,Visualiser mes statistiques sous forme de graphiques
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux créer une chasse au trésor simple",Créer une chasse au trésor simple,M,Must,Back + Front,content-creation,
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux définir l'emplacement d'une cache sur la carte",Définir l'emplacement d'une cache sur la carte,S,Must,Front,content-creation;map,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux ajouter des indices pour ma chasse",Ajouter des indices pour ma chasse,S,Must,Front + Back,content-creation,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux associer une énigme à ma cache",Associer une énigme à ma cache,M,Must,Front + Back,content-creation;puzzle,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux définir la difficulté de ma chasse",Définir la difficulté de ma chasse,XS,Must,Front + Back,content-creation;gamification,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux ajouter des photos à ma cache",Ajouter des photos à ma cache,S,Should,Front + Back,content-creation;media,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux prévisualiser ma chasse avant publication",Prévisualiser ma chasse avant publication,M,Should,Front,content-creation,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux modifier une chasse existante",Modifier une chasse existante,M,Should,Front + Back,content-management,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux dupliquer une chasse existante",Dupliquer une chasse existante,S,Could,Front + Back,content-management,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses standard,"En tant qu'utilisateur, je veux définir un rayon de proximité pour ma cache",Définir un rayon de proximité pour ma cache,S,Must,Front + Back,content-creation;map,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux créer une chasse avec plusieurs étapes",Créer une chasse avec plusieurs étapes,L,Should,Front + Back,content-creation,Créer une chasse au trésor simple
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux définir un parcours spécifique pour ma chasse",Définir un parcours spécifique pour ma chasse,L,Should,Front + Back,content-creation;map,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux intégrer des éléments de réalité augmentée",Intégrer des éléments de réalité augmentée,XL,Could,Front,content-creation;ar,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux ajouter des conditions temporelles",Ajouter des conditions temporelles,M,Could,Front + Back,content-creation;gamification,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux personnaliser l'apparence visuelle de ma chasse",Personnaliser l'apparence visuelle de ma chasse,L,Could,Front,content-creation;media,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux définir des récompenses spécifiques",Définir des récompenses spécifiques,M,Should,Front + Back,content-creation;reward,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux limiter ma chasse à un groupe spécifique",Limiter ma chasse à un groupe spécifique,M,Should,Front + Back,content-creation;social,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux créer une chasse thématique",Créer une chasse thématique,M,Could,Front + Back,content-creation,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux ajouter du contenu audio à ma chasse",Ajouter du contenu audio à ma chasse,M,Could,Front + Back,content-creation;media,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Création de chasses personnalisées,"En tant qu'utilisateur, je veux créer une chasse éducative avec quiz",Créer une chasse éducative avec quiz,L,Could,Front + Back,content-creation;gamification;quiz,Créer une chasse avec plusieurs étapes
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux créer des énigmes textuelles simples",Créer des énigmes textuelles simples,S,Must,Front + Back,puzzle;content-creation,
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux associer des indices visuels à mes énigmes",Associer des indices visuels à mes énigmes,M,Should,Front + Back,puzzle;media,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux choisir parmi des modèles d'énigmes prédéfinis",Choisir parmi des modèles d'énigmes prédéfinis,M,Should,Front + Back,puzzle,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux définir plusieurs niveaux d'indices",Définir plusieurs niveaux d'indices,M,Should,Front + Back,puzzle,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux créer des énigmes avec plusieurs solutions valides",Créer des énigmes avec plusieurs solutions valides,M,Could,Front + Back,puzzle,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux tester la résolution de mon énigme",Tester la résolution de mon énigme,S,Must,Front + Back,puzzle,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux importer des énigmes existantes",Importer des énigmes existantes,M,Could,Front + Back,puzzle,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux noter la difficulté perçue des énigmes",Noter la difficulté perçue des énigmes,S,Could,Front + Back,puzzle;gamification,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux créer des énigmes qui nécessitent l'observation du lieu réel",Créer des énigmes qui nécessitent l'observation du lieu réel,M,Should,Front + Back,puzzle;content-creation;map,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Gestion des énigmes,"En tant qu'utilisateur, je veux un historique de mes énigmes créées",Un historique de mes énigmes créées,S,Could,Front + Back,puzzle;analytics,Créer des énigmes textuelles simples
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux signaler un contenu inapproprié",Signaler un contenu inapproprié,S,Must,Front + Back,moderation,
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux noter la qualité des chasses complétées",Noter la qualité des chasses complétées,S,Should,Front + Back,moderation;analytics,
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux laisser un commentaire sur une chasse",Laisser un commentaire sur une chasse,S,Should,Front + Back,moderation;social,
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux signaler une cache introuvable",Signaler une cache introuvable,S,Must,Front + Back,moderation,
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux contester une modération",Contester une modération,M,Should,Front + Back,moderation,Signaler un contenu inapproprié
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux voir l'état de modération de mes chasses",Voir l'état de modération de mes chasses,S,Should,Front + Back,moderation,Signaler un contenu inapproprié
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux recevoir des notifications de modération",Recevoir des notifications de modération,S,Should,Front + Back,moderation;notification,Signaler un contenu inapproprié;Recevoir des notifications push sur mon téléphone
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux filtrer les chasses par évaluation",Filtrer les chasses par évaluation,M,Could,Front + Back,moderation;content-management,
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux voir les règles de modération",Voir les règles de modération,XS,Must,Front,moderation,
+Création & Gestion de contenu,Modération du contenu (Utilisateur),"En tant qu'utilisateur, je veux un système de reconnaissance des contributeurs fiables",Système de reconnaissance des contributeurs fiables,L,Could,Front + Back,moderation;social,
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux voir mon solde de monnaie virtuelle",Voir mon solde de monnaie virtuelle,S,Must,Front + Back,wallet,
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux gagner de la monnaie en complétant des chasses",Gagner de la monnaie en complétant des chasses,M,Must,Back,wallet;reward;content-management,Voir mon solde de monnaie virtuelle;Recevoir des notifications push sur mon téléphone;Créer une chasse au trésor simple
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux dépenser ma monnaie pour des objets virtuels",Dépenser ma monnaie pour des objets virtuels,M,Should,Front + Back,wallet;reward,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux consulter l'historique de mes transactions",Consulter l'historique de mes transactions,M,Should,Front + Back,wallet;analytics,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux transférer de la monnaie à d'autres utilisateurs",Transférer de la monnaie à d'autres utilisateurs,L,Could,Front + Back,wallet;social,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux acheter de la monnaie avec de l'argent réel",Acheter de la monnaie avec de l'argent réel,L,Could,Front + Back,wallet,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux des notifications pour mes transactions",Des notifications pour mes transactions,S,Should,Front + Back,wallet;notification,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux sécuriser mon wallet avec authentification",Sécuriser mon wallet avec authentification,M,Must,Front + Back,wallet;auth,Voir mon solde de monnaie virtuelle;Créer un compte avec email et mot de passe
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux récupérer mon wallet en cas de perte d'accès",Récupérer mon wallet en cas de perte d'accès,M,Must,Back,wallet;auth,Sécuriser mon wallet avec authentification
+Écosystème & économique,Wallet & Transactions,"En tant qu'utilisateur, je veux définir des limites de dépenses",Définir des limites de dépenses,M,Could,Front + Back,wallet,Sécuriser mon wallet avec authentification
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux collecter des artefacts uniques (NFT)",Collecter des artefacts uniques (NFT),L,Should,Front + Back + Blockchain,blockchain;reward,
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux voir ma collection d'artefacts",Voir ma collection d'artefacts,M,Should,Front + Blockchain,blockchain;analytics,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux obtenir un certificat d'authenticité pour mes découvertes",Obtenir un certificat d'authenticité pour mes découvertes,M,Could,Back + Blockchain,blockchain,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux échanger des artefacts avec d'autres joueurs",Échanger des artefacts avec d'autres joueurs,L,Could,Front + Back + Blockchain,blockchain;social,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux connecter un wallet externe",Connecter un wallet externe,L,Could,Front + Blockchain,blockchain;wallet,Sécuriser mon wallet avec authentification
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux comprendre la valeur de mes NFT",Comprendre la valeur de mes NFT,M,Could,Front + Blockchain,blockchain;analytics,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux des artefacts à édition limitée",Artefacts à édition limitée,M,Could,Back + Blockchain,blockchain,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux recevoir des NFT pour des événements spéciaux",Recevoir des NFT pour des événements spéciaux,M,Won't,Back + Blockchain,blockchain;reward,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux exporter mes NFT vers d'autres plateformes",Exporter mes NFT vers d'autres plateformes,XL,Won't,Back + Blockchain,blockchain,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Blockchain & NFT,"En tant qu'utilisateur, je veux voir l'historique de propriété d'un artefact",Voir l'historique de propriété d'un artefact,M,Could,Front + Blockchain,blockchain;analytics,Collecter des artefacts uniques (NFT)
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux échanger ma monnaie contre des cartes cadeaux",Échanger ma monnaie contre des cartes cadeaux,L,Could,Front + Back,giftcard;wallet,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux voir les cartes cadeaux disponibles",Voir les cartes cadeaux disponibles,M,Could,Front + Back,giftcard,
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux recevoir ma carte cadeau par email",Recevoir ma carte cadeau par email,M,Could,Back,giftcard;notification,Échanger ma monnaie contre des cartes cadeaux
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux offrir une carte cadeau à un ami",Offrir une carte cadeau à un ami,M,Could,Front + Back,giftcard;social,Échanger ma monnaie contre des cartes cadeaux
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux échanger des points contre des réductions chez des partenaires",Échanger des points contre des réductions chez des partenaires,L,Won't,Front + Back,giftcard;partner,Voir mon solde de monnaie virtuelle
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux être notifié des nouvelles offres d'échange",Être notifié des nouvelles offres d'échange,S,Could,Front + Back,giftcard;notification,Voir les cartes cadeaux disponibles
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux consulter l'historique de mes échanges",Consulter l'historique de mes échanges,M,Could,Front + Back,giftcard;analytics,Échanger ma monnaie contre des cartes cadeaux
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux annuler un échange en cours",Annuler un échange en cours,M,Could,Front + Back,giftcard,Échanger ma monnaie contre des cartes cadeaux
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux des promotions sur les échanges lors d'événements",Des promotions sur les échanges lors d'événements,M,Won't,Front + Back,giftcard,Voir les cartes cadeaux disponibles
+Écosystème & économique,Cartes cadeaux & Échanges,"En tant qu'utilisateur, je veux un système de liste de souhaits pour futures récompenses",Un système de liste de souhaits pour futures récompenses,M,Won't,Front + Back,giftcard;reward,Voir les cartes cadeaux disponibles
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux gagner des récompenses pour mes découvertes",Gagner des récompenses pour mes découvertes,M,Must,Back,reward,
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux des récompenses basées sur mon niveau d'activité",Des récompenses basées sur mon niveau d'activité,M,Should,Back,reward;gamification,Gagner des récompenses pour mes découvertes
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux être récompensé pour la création de chasses populaires",Être récompensé pour la création de chasses populaires,M,Should,Back,reward;content-creation,Créer une chasse au trésor simple
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux un système de récompenses progressives",Un système de récompenses progressives,M,Should,Back,reward;gamification,Gagner des récompenses pour mes découvertes
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux recevoir des récompenses exclusives lors d'événements",Recevoir des récompenses exclusives lors d'événements,M,Could,Back,reward,Gagner des récompenses pour mes découvertes
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux un catalogue des récompenses disponibles",Un catalogue des récompenses disponibles,S,Should,Front + Back,reward,Gagner des récompenses pour mes découvertes
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux échanger des récompenses mineures contre de meilleures",Échanger des récompenses mineures contre de meilleures,L,Could,Front + Back,reward,Un catalogue des récompenses disponibles
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux partager mes récompenses sur les réseaux sociaux",Partager mes récompenses sur les réseaux sociaux,S,Could,Front,reward;social,Recevoir une récompense pour ma connexion quotidienne;Lier mes réseaux sociaux à mon profil
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux voir mon progression vers la prochaine récompense",Voir mon progression vers la prochaine récompense,M,Should,Front + Back,reward;gamification,Un système de récompenses progressives
+Écosystème & économique,Système de récompenses,"En tant qu'utilisateur, je veux des défis spéciaux avec des récompenses uniques",Des défis spéciaux avec des récompenses uniques,L,Could,Front + Back,reward;gamification,Gagner des récompenses pour mes découvertes
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux voir les statistiques de mes chasses",Voir les statistiques de mes chasses,M,Should,Front + Back,partner;analytics;content-management,
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux analyser l'engagement des utilisateurs",Analyser l'engagement des utilisateurs,L,Should,Front + Back,partner;analytics,Voir les statistiques de mes chasses
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux suivre les conversions de mes promotions",Suivre les conversions de mes promotions,L,Could,Front + Back,partner;analytics;campaign,Voir les statistiques de mes chasses
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux personnaliser mon espace partenaire",Personnaliser mon espace partenaire,M,Could,Front,partner,
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux générer des rapports détaillés",Générer des rapports détaillés,L,Could,Front + Back,partner;analytics,Voir les statistiques de mes chasses
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux définir des objectifs mesurables",Définir des objectifs mesurables,M,Could,Front + Back,partner;analytics,
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux comparer mes performances avec des benchmarks",Compare mes performances avec des benchmarks,L,Won't,Front + Back,partner;analytics,Voir les statistiques de mes chasses
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux gérer mon équipe avec différents accès",Gérer mon équipe avec différents accès,L,Could,Front + Back,partner,
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux voir les données démographiques des participants",Voir les données démographiques des participants,L,Could,Front + Back,partner;analytics,
+Partenariats & Business,Dashboard partenaires,"En tant que partenaire, je veux exporter mes données statistiques",Exporter mes données statistiques,M,Could,Front + Back,partner;analytics,Voir les statistiques de mes chasses
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux créer des codes promotionnels",Créer des codes promotionnels,M,Should,Front + Back,campaign;partner,
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux proposer des bonus aux nouveaux utilisateurs",Proposer des bonus aux nouveaux utilisateurs,M,Should,Front + Back,campaign;partner;reward,
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux personnaliser une page d'atterrissage",Personnaliser une page d'atterrissage,L,Could,Front,campaign;partner,
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux des outils de partage sur réseaux sociaux",Des outils de partage sur réseaux sociaux,M,Should,Front,campaign;partner;social,
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux suivre l'origine des utilisateurs acquis",Suivre l'origine des utilisateurs acquis,L,Could,Front + Back,campaign;partner;analytics,Créer des codes promotionnels
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux des modèles d'emails promotionnels",Des modèles d'emails promotionnels,M,Could,Front + Back,campaign;partner;notification,Créer des codes promotionnels
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux organiser des événements spéciaux",Organiser des événements spéciaux,L,Could,Front + Back,campaign;partner,
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux cibler des utilisateurs par zone géographique",Cibler des utilisateurs par zone géographique,M,Could,Front + Back,campaign;partner,
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux des QR codes personnalisés pour mes promotions",Des QR codes personnalisés pour mes promotions,M,Could,Front + Back,campaign;partner,Créer des codes promotionnels
+Partenariats & Business,Promotion & Acquisition utilisateurs,"En tant que partenaire, je veux créer des défis exclusifs pour ma marque",Créer des défis exclusifs pour ma marque,L,Won't,Front + Back,campaign;partner;gamification,
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux créer une campagne marketing liée à mes chasses",Créer une campagne marketing liée à mes chasses,L,Should,Front + Back,campaign;partner,
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux définir la durée de ma campagne",Définir la durée de ma campagne,S,Should,Front + Back,campaign;partner,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux cibler des segments d'utilisateurs spécifiques",Cibler des segments d'utilisateurs spécifiques,L,Could,Front + Back,campaign;partner,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux suivre les métriques de ma campagne en temps réel",Suivre les métriques de ma campagne en temps réel,L,Could,Front + Back,campaign;partner;analytics,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux programmer des actions automatisées",Programmer des actions automatisées,L,Could,Back,campaign;partner,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux personnaliser les messages de ma campagne",Personnaliser les messages de ma campagne,M,Should,Front + Back,campaign;partner;notification,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux dupliquer une campagne existante",Dupliquer une campagne existante,M,Could,Front + Back,campaign;partner,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux comparer les performances de différentes campagnes",Compare les performances de différentes campagnes,L,Won't,Front + Back,campaign;partner;analytics,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux intégrer mes campagnes à mes autres outils marketing",Intégrer mes campagnes à mes autres outils marketing,XL,Won't,Back,campaign;partner,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Gestion des campagnes,"En tant que partenaire, je veux recevoir des alertes sur les performances",Recevoir des alertes sur les performances,M,Could,Front + Back,campaign;partner;notification,Créer une campagne marketing liée à mes chasses
+Partenariats & Business,Programme d'affiliation,"En tant qu'utilisateur, je veux devenir affilié",Devenir affilié,M,Won't,Front + Back,partner;social,
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux générer des liens de parrainage",Générer des liens de parrainage,M,Could,Front + Back,partner;social,Devenir affilié
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux suivre mes commissions",Suivre mes commissions,M,Won't,Front + Back,partner;analytics,Générer des liens de parrainage
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux voir les statistiques de mes conversions",Voir les statistiques de mes conversions,L,Won't,Front + Back,partner;analytics,Générer des liens de parrainage
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux recevoir des paiements pour mes commissions",Recevoir des paiements pour mes commissions,L,Won't,Back,partner;wallet,Générer des liens de parrainage;Voir mon solde de monnaie virtuelle;Suivre mes commissions
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux des outils promotionnels personnalisés",Des outils promotionnels personnalisés,L,Won't,Front + Back,partner;campaign,Devenir affilié
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux des niveaux progressifs dans le programme",Des niveaux progressifs dans le programme,L,Won't,Back,partner;gamification,Devenir affilié
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux être notifié des nouvelles opportunités",Être notifié des nouvelles opportunités,M,Won't,Front + Back,partner;notification,Devenir affilié
+Partenariats & Business,Programme d'affiliation,"En tant qu'utilisateur, je veux entrer un code de parrainage",Entrer un code de parrainage,S,Could,Front + Back,partner;social,Devenir affilié
+Partenariats & Business,Programme d'affiliation,"En tant qu'affilié, je veux un tableau de bord dédié à mon activité",Un tableau de bord dédié à mon activité,L,Won't,Front + Back,partner;analytics,Générer des liens de parrainage
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des rapports hebdomadaires automatiques",Des rapports hebdomadaires automatiques,L,Should,Back,analytics;partner,
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux visualiser les données avec des graphiques",Visualiser les données avec des graphiques,L,Should,Front,analytics;partner,
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des analyses comparatives par période",Des analyses comparatives par période,L,Could,Front + Back,analytics;partner,Visualiser les données avec des graphiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux filtrer mes rapports selon différents critères",Filtrer mes rapports selon différents critères,L,Could,Front + Back,analytics;partner,Visualiser les données avec des graphiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux exporter mes rapports en différents formats",Exporter mes rapports en différents formats,M,Could,Front + Back,analytics;partner,Visualiser les données avec des graphiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux programmer l'envoi automatique de rapports",Programmer l'envoi automatique de rapports,M,Could,Back,analytics;partner,Des rapports hebdomadaires automatiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des insights basés sur mes données",Des insights basés sur mes données,XL,Won't,Back,analytics;partner,Visualiser les données avec des graphiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux des suggestions d'optimisation basées sur mes performances",Des suggestions d'optimisation basées sur mes performances,XL,Won't,Back,analytics;partner,Visualiser les données avec des graphiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux personnaliser mes métriques clés",Personnaliser mes métriques clés,L,Could,Front + Back,analytics;partner,Visualiser les données avec des graphiques
+Partenariats & Business,Rapports de performance,"En tant que partenaire, je veux partager mes rapports avec mon équipe",Partager mes rapports avec mon équipe,M,Could,Front + Back,analytics;partner;social,Visualiser les données avec des graphiques
