@@ -13,6 +13,7 @@ Later: Mettre en avant l'aspect communautaire et la collaboration avec des parte
 Estimation: XS
 Priorité: Must
 Type: Front + Back
+Dépendances:
 
 #### User Story: Se connecter à son compte
 
@@ -21,6 +22,7 @@ Type: Front + Back
 Estimation: XS
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Personnaliser son profil
 
@@ -29,6 +31,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Récupérer son mot de passe oublié
 
@@ -37,14 +40,16 @@ Type: Front + Back
 Estimation: XS
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Me connecter via Google/Facebook
 
 - En tant qu'utilisateur, je veux me connecter via Google/Facebook
 
-Estimation: S
-Priorité: Should
+Estimation: M
+Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Modifier mes informations personnelles
 
@@ -53,6 +58,7 @@ Type: Front + Back
 Estimation: XS
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Supprimer mon compte
 
@@ -61,6 +67,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Gérer mes paramètres de confidentialité
 
@@ -69,6 +76,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Voir mon historique de chasses
 
@@ -77,6 +85,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 #### User Story: Lier mes réseaux sociaux à mon profil
 
@@ -85,6 +94,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer un compte avec email et mot de passe
 
 ### Epic: Onboarding & Tutoriel
 
@@ -95,6 +105,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Must
 Type: Front
+Dépendances:
 
 #### User Story: Apprendre à créer ma première cache
 
@@ -103,6 +114,7 @@ Type: Front
 Estimation: S
 Priorité: Could
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 #### User Story: Comprendre le système de récompenses
 
@@ -111,6 +123,7 @@ Type: Front
 Estimation: S
 Priorité: Must
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 #### User Story: Savoir comment compléter une chasse
 
@@ -119,6 +132,7 @@ Type: Front
 Estimation: S
 Priorité: Must
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 #### User Story: Découvrir les fonctionnalités de base
 
@@ -127,6 +141,7 @@ Type: Front
 Estimation: S
 Priorité: Must
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 #### User Story: Accéder aux tutoriels à tout moment
 
@@ -135,6 +150,7 @@ Type: Front
 Estimation: XS
 Priorité: Should
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 #### User Story: Conseils contextuels durant mes premières actions
 
@@ -143,6 +159,7 @@ Type: Front
 Estimation: M
 Priorité: Should
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 #### User Story: FAQ des questions communes
 
@@ -151,6 +168,7 @@ Type: Front
 Estimation: S
 Priorité: Could
 Type: Front
+Dépendances:
 
 #### User Story: Des vidéos explicatives
 
@@ -159,6 +177,7 @@ Type: Front
 Estimation: M
 Priorité: Could
 Type: Front
+Dépendances:
 
 #### User Story: Passer le tutoriel si je suis déjà familier
 
@@ -167,6 +186,7 @@ Type: Front
 Estimation: XS
 Priorité: Should
 Type: Front
+Dépendances: Tutoriel interactif pour comprendre le jeu
 
 ### Epic: Système de niveau et d'expérience
 
@@ -177,6 +197,7 @@ Type: Front
 Estimation: M
 Priorité: Must
 Type: Back + Front
+Dépendances:
 
 #### User Story: Monter de niveau grâce à mes actions
 
@@ -185,6 +206,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Must
 Type: Back + Front
+Dépendances: Gagner des points d'expérience en complétant des chasses
 
 #### User Story: Voir ma progression actuelle
 
@@ -193,6 +215,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Must
 Type: Front
+Dépendances: Monter de niveau grâce à mes actions
 
 #### User Story: Débloquer de nouvelles fonctionnalités avec mon niveau
 
@@ -201,6 +224,7 @@ Type: Front
 Estimation: M
 Priorité: Should
 Type: Back + Front
+Dépendances: Monter de niveau grâce à mes actions
 
 #### User Story: Consulter les avantages du niveau suivant
 
@@ -209,6 +233,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Should
 Type: Front
+Dépendances: Monter de niveau grâce à mes actions
 
 #### User Story: Des défis quotidiens pour gagner de l'XP
 
@@ -217,6 +242,7 @@ Type: Front
 Estimation: M
 Priorité: Could
 Type: Back + Front
+Dépendances: Gagner des points d'expérience en complétant des chasses
 
 #### User Story: Compare mon niveau avec d'autres joueurs
 
@@ -225,6 +251,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Could
 Type: Back + Front
+Dépendances: Monter de niveau grâce à mes actions
 
 #### User Story: Des badges pour mes accomplissements
 
@@ -233,6 +260,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Could
 Type: Back + Front
+Dépendances: Monter de niveau grâce à mes actions
 
 #### User Story: Historique de mes points gagnés
 
@@ -241,6 +269,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Could
 Type: Back + Front
+Dépendances: Gagner des points d'expérience en complétant des chasses
 
 #### User Story: Récompenses spéciales à certains paliers
 
@@ -249,6 +278,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Should
 Type: Back + Front
+Dépendances: Monter de niveau grâce à mes actions
 
 ### Epic: Récompenses quotidiennes (Flamme Snapchat)
 
@@ -259,6 +289,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances:
 
 #### User Story: Un calendrier de récompenses progressives
 
@@ -267,6 +298,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Être notifié de ma récompense disponible
 
@@ -275,6 +307,7 @@ Type: Back + Front
 Estimation: XS
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Des bonus pour les connexions consécutives
 
@@ -283,6 +316,7 @@ Type: Back + Front
 Estimation: XS
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Voir le temps restant avant la prochaine récompense
 
@@ -291,6 +325,7 @@ Type: Back + Front
 Estimation: XS
 Priorité: Should
 Type: Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Des récompenses spéciales les week-ends
 
@@ -299,6 +334,7 @@ Type: Front
 Estimation: S
 Priorité: Could
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Rattraper une récompense manquée
 
@@ -307,6 +343,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Could
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Échanger des récompenses contre d'autres items
 
@@ -315,6 +352,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Won't
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Partager mes récompenses sur les réseaux sociaux
 
@@ -323,6 +361,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Could
 Type: Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: Des récompenses exclusives lors d'événements
 
@@ -331,6 +370,7 @@ Type: Front
 Estimation: M
 Priorité: Could
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 ### Epic: Système de notifications
 
@@ -341,6 +381,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Must
 Type: Back + Front
+Dépendances:
 
 #### User Story: Être alerté des nouvelles chasses près de moi
 
@@ -349,6 +390,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Could
 Type: Back + Front
+Dépendances:
 
 #### User Story: Recevoir des notifications push sur mon téléphone
 
@@ -357,6 +399,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Must
 Type: Back + Front
+Dépendances:
 
 #### User Story: Personnaliser les types de notifications reçues
 
@@ -365,6 +408,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir des notifications push sur mon téléphone
 
 #### User Story: être notifié des récompenses disponibles
 
@@ -373,6 +417,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir une récompense pour ma connexion quotidienne
 
 #### User Story: être informé des messages reçus
 
@@ -381,6 +426,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances:
 
 #### User Story: Voir un centre de notifications dans l'app
 
@@ -389,6 +435,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Must
 Type: Front
+Dépendances: Recevoir des notifications push sur mon téléphone
 
 #### User Story: Désactiver temporairement les notifications
 
@@ -397,6 +444,7 @@ Type: Front
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir des notifications push sur mon téléphone
 
 #### User Story: Recevoir des notifications par email
 
@@ -405,6 +453,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Could
 Type: Back
+Dépendances:
 
 #### User Story: être notifié des mises à jour importantes
 
@@ -413,6 +462,7 @@ Type: Back
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances: Recevoir des notifications push sur mon téléphone
 
 ### Epic: Dashboard global (Metrics)
 
@@ -423,6 +473,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances:
 
 #### User Story: Consulter ma distance totale parcourue
 
@@ -431,6 +482,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Should
 Type: Back + Front
+Dépendances:
 
 #### User Story: Visualiser mes statistiques sous forme de graphiques
 
@@ -439,6 +491,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Could
 Type: Front
+Dépendances: Voir le nombre total de chasses complétées
 
 #### User Story: Voir mon classement parmi les autres joueurs
 
@@ -447,6 +500,7 @@ Type: Front
 Estimation: M
 Priorité: Could
 Type: Back + Front
+Dépendances:
 
 #### User Story: Consulter mes artefacts collectionnés
 
@@ -455,6 +509,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Must
 Type: Back + Front
+Dépendances:
 
 #### User Story: Suivre mes objectifs personnels
 
@@ -463,6 +518,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Must
 Type: Back + Front
+Dépendances:
 
 #### User Story: Voir mes réalisations récentes
 
@@ -471,6 +527,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Should
 Type: Back + Front
+Dépendances:
 
 #### User Story: Exporter mes statistiques
 
@@ -479,6 +536,7 @@ Type: Back + Front
 Estimation: L
 Priorité: Won't
 Type: Back + Front
+Dépendances: Visualiser mes statistiques sous forme de graphiques
 
 #### User Story: Personnaliser mon tableau de bord
 
@@ -487,6 +545,7 @@ Type: Back + Front
 Estimation: L
 Priorité: Won't
 Type: Front
+Dépendances: Visualiser mes statistiques sous forme de graphiques
 
 #### User Story: Des suggestions basées sur mes statistiques
 
@@ -495,6 +554,7 @@ Type: Front
 Estimation: L
 Priorité: Could
 Type: Back + Front
+Dépendances: Visualiser mes statistiques sous forme de graphiques
 
 ## THEME: Création & Gestion de contenu
 
@@ -507,6 +567,7 @@ Type: Back + Front
 Estimation: M
 Priorité: Must
 Type: Back + Front
+Dépendances:
 
 #### User Story: Définir l'emplacement d'une cache sur la carte
 
@@ -515,6 +576,7 @@ Type: Back + Front
 Estimation: S
 Priorité: Must
 Type: Front
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Ajouter des indices pour ma chasse
 
@@ -523,6 +585,7 @@ Type: Front
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Associer une énigme à ma cache
 
@@ -531,6 +594,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Définir la difficulté de ma chasse
 
@@ -539,6 +603,7 @@ Type: Front + Back
 Estimation: XS
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Ajouter des photos à ma cache
 
@@ -547,6 +612,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Prévisualiser ma chasse avant publication
 
@@ -555,6 +621,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Modifier une chasse existante
 
@@ -563,6 +630,7 @@ Type: Front
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Dupliquer une chasse existante
 
@@ -571,6 +639,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Définir un rayon de proximité pour ma cache
 
@@ -579,6 +648,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 ### Epic: Création de chasses personnalisées
 
@@ -589,6 +659,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une chasse au trésor simple
 
 #### User Story: Définir un parcours spécifique pour ma chasse
 
@@ -597,6 +668,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Intégrer des éléments de réalité augmentée
 
@@ -605,6 +677,7 @@ Type: Front + Back
 Estimation: XL
 Priorité: Could
 Type: Front
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Ajouter des conditions temporelles
 
@@ -613,6 +686,7 @@ Type: Front
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Personnaliser l'apparence visuelle de ma chasse
 
@@ -621,6 +695,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Définir des récompenses spécifiques
 
@@ -629,6 +704,7 @@ Type: Front
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Limiter ma chasse à un groupe spécifique
 
@@ -637,6 +713,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Créer une chasse thématique
 
@@ -645,6 +722,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Ajouter du contenu audio à ma chasse
 
@@ -653,6 +731,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 #### User Story: Créer une chasse éducative avec quiz
 
@@ -661,6 +740,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une chasse avec plusieurs étapes
 
 ### Epic: Gestion des énigmes
 
@@ -671,6 +751,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances:
 
 #### User Story: Associer des indices visuels à mes énigmes
 
@@ -679,6 +760,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Choisir parmi des modèles d'énigmes prédéfinis
 
@@ -687,6 +769,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Définir plusieurs niveaux d'indices
 
@@ -695,6 +778,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Créer des énigmes avec plusieurs solutions valides
 
@@ -703,6 +787,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Tester la résolution de mon énigme
 
@@ -711,6 +796,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Importer des énigmes existantes
 
@@ -719,6 +805,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Noter la difficulté perçue des énigmes
 
@@ -727,6 +814,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Créer des énigmes qui nécessitent l'observation du lieu réel
 
@@ -735,6 +823,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 #### User Story: Un historique de mes énigmes créées
 
@@ -743,6 +832,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des énigmes textuelles simples
 
 ### Epic: Modération du contenu (Utilisateur)
 
@@ -753,6 +843,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances:
 
 #### User Story: Noter la qualité des chasses complétées
 
@@ -761,6 +852,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances:
 
 #### User Story: Laisser un commentaire sur une chasse
 
@@ -769,6 +861,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances:
 
 #### User Story: Signaler une cache introuvable
 
@@ -777,6 +870,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances:
 
 #### User Story: Contester une modération
 
@@ -785,6 +879,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Signaler un contenu inapproprié
 
 #### User Story: Voir l'état de modération de mes chasses
 
@@ -793,6 +888,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Signaler un contenu inapproprié
 
 #### User Story: Recevoir des notifications de modération
 
@@ -801,6 +897,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Signaler un contenu inapproprié
 
 #### User Story: Filtrer les chasses par évaluation
 
@@ -809,6 +906,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Voir les règles de modération
 
@@ -817,6 +915,7 @@ Type: Front + Back
 Estimation: XS
 Priorité: Must
 Type: Front
+Dépendances:
 
 #### User Story: Système de reconnaissance des contributeurs fiables
 
@@ -825,6 +924,7 @@ Type: Front
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 ## THEME: Écosystème & économique
 
@@ -837,6 +937,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Must
 Type: Front + Back
+Dépendances:
 
 #### User Story: Gagner de la monnaie en complétant des chasses
 
@@ -845,6 +946,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Must
 Type: Back
+Dépendances:
 
 #### User Story: Dépenser ma monnaie pour des objets virtuels
 
@@ -853,6 +955,7 @@ Type: Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Consulter l'historique de mes transactions
 
@@ -861,6 +964,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Transférer de la monnaie à d'autres utilisateurs
 
@@ -869,6 +973,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Acheter de la monnaie avec de l'argent réel
 
@@ -877,6 +982,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Des notifications pour mes transactions
 
@@ -885,6 +991,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Sécuriser mon wallet avec authentification
 
@@ -893,6 +1000,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Must
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Récupérer mon wallet en cas de perte d'accès
 
@@ -901,6 +1009,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Must
 Type: Back
+Dépendances: Sécuriser mon wallet avec authentification
 
 #### User Story: Définir des limites de dépenses
 
@@ -909,6 +1018,7 @@ Type: Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Sécuriser mon wallet avec authentification
 
 ### Epic: Blockchain & NFT
 
@@ -919,6 +1029,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Should
 Type: Front + Back + Blockchain
+Dépendances:
 
 #### User Story: Voir ma collection d'artefacts
 
@@ -927,6 +1038,7 @@ Type: Front + Back + Blockchain
 Estimation: M
 Priorité: Should
 Type: Front + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Obtenir un certificat d'authenticité pour mes découvertes
 
@@ -935,6 +1047,7 @@ Type: Front + Blockchain
 Estimation: M
 Priorité: Could
 Type: Back + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Échanger des artefacts avec d'autres joueurs
 
@@ -943,6 +1056,7 @@ Type: Back + Blockchain
 Estimation: L
 Priorité: Could
 Type: Front + Back + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Connecter un wallet externe
 
@@ -951,6 +1065,7 @@ Type: Front + Back + Blockchain
 Estimation: L
 Priorité: Could
 Type: Front + Blockchain
+Dépendances: Sécuriser mon wallet avec authentification
 
 #### User Story: Comprendre la valeur de mes NFT
 
@@ -959,6 +1074,7 @@ Type: Front + Blockchain
 Estimation: M
 Priorité: Could
 Type: Front + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Artefacts à édition limitée
 
@@ -967,6 +1083,7 @@ Type: Front + Blockchain
 Estimation: M
 Priorité: Could
 Type: Back + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Recevoir des NFT pour des événements spéciaux
 
@@ -975,6 +1092,7 @@ Type: Back + Blockchain
 Estimation: M
 Priorité: Won't
 Type: Back + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Exporter mes NFT vers d'autres plateformes
 
@@ -983,6 +1101,7 @@ Type: Back + Blockchain
 Estimation: XL
 Priorité: Won't
 Type: Back + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 #### User Story: Voir l'historique de propriété d'un artefact
 
@@ -991,6 +1110,7 @@ Type: Back + Blockchain
 Estimation: M
 Priorité: Could
 Type: Front + Blockchain
+Dépendances: Collecter des artefacts uniques (NFT)
 
 ### Epic: Cartes cadeaux & Échanges
 
@@ -1001,6 +1121,7 @@ Type: Front + Blockchain
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Voir les cartes cadeaux disponibles
 
@@ -1009,6 +1130,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Recevoir ma carte cadeau par email
 
@@ -1017,6 +1139,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Back
+Dépendances: Échanger ma monnaie contre des cartes cadeaux
 
 #### User Story: Offrir une carte cadeau à un ami
 
@@ -1025,6 +1148,7 @@ Type: Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Échanger ma monnaie contre des cartes cadeaux
 
 #### User Story: Échanger des points contre des réductions chez des partenaires
 
@@ -1033,6 +1157,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances: Voir mon solde de monnaie virtuelle
 
 #### User Story: Être notifié des nouvelles offres d'échange
 
@@ -1041,6 +1166,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir les cartes cadeaux disponibles
 
 #### User Story: Consulter l'historique de mes échanges
 
@@ -1049,6 +1175,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Échanger ma monnaie contre des cartes cadeaux
 
 #### User Story: Annuler un échange en cours
 
@@ -1057,6 +1184,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Échanger ma monnaie contre des cartes cadeaux
 
 #### User Story: Des promotions sur les échanges lors d'événements
 
@@ -1065,6 +1193,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Won't
 Type: Front + Back
+Dépendances: Voir les cartes cadeaux disponibles
 
 #### User Story: Un système de liste de souhaits pour futures récompenses
 
@@ -1073,6 +1202,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Won't
 Type: Front + Back
+Dépendances:
 
 ### Epic: Système de récompenses
 
@@ -1083,6 +1213,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Must
 Type: Back
+Dépendances:
 
 #### User Story: Des récompenses basées sur mon niveau d'activité
 
@@ -1091,6 +1222,7 @@ Type: Back
 Estimation: M
 Priorité: Should
 Type: Back
+Dépendances: Gagner des récompenses pour mes découvertes
 
 #### User Story: Être récompensé pour la création de chasses populaires
 
@@ -1099,6 +1231,7 @@ Type: Back
 Estimation: M
 Priorité: Should
 Type: Back
+Dépendances: Gagner des récompenses pour mes découvertes
 
 #### User Story: Un système de récompenses progressives
 
@@ -1107,6 +1240,7 @@ Type: Back
 Estimation: M
 Priorité: Should
 Type: Back
+Dépendances: Gagner des récompenses pour mes découvertes
 
 #### User Story: Recevoir des récompenses exclusives lors d'événements
 
@@ -1115,6 +1249,7 @@ Type: Back
 Estimation: M
 Priorité: Could
 Type: Back
+Dépendances: Gagner des récompenses pour mes découvertes
 
 #### User Story: Un catalogue des récompenses disponibles
 
@@ -1123,6 +1258,7 @@ Type: Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Gagner des récompenses pour mes découvertes
 
 #### User Story: Échanger des récompenses mineures contre de meilleures
 
@@ -1131,6 +1267,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Un catalogue des récompenses disponibles
 
 #### User Story: Partager mes récompenses sur les réseaux sociaux
 
@@ -1139,6 +1276,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front
+Dépendances: Gagner des récompenses pour mes découvertes
 
 #### User Story: Voir mon progression vers la prochaine récompense
 
@@ -1147,6 +1285,7 @@ Type: Front
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Un système de récompenses progressives
 
 #### User Story: Des défis spéciaux avec des récompenses uniques
 
@@ -1155,6 +1294,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Gagner des récompenses pour mes découvertes
 
 ## THEME: Partenariats & Business
 
@@ -1167,6 +1307,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances:
 
 #### User Story: Analyser l'engagement des utilisateurs
 
@@ -1175,6 +1316,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Should
 Type: Front + Back
+Dépendances: Voir les statistiques de mes chasses
 
 #### User Story: Suivre les conversions de mes promotions
 
@@ -1183,6 +1325,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir les statistiques de mes chasses
 
 #### User Story: Personnaliser mon espace partenaire
 
@@ -1191,6 +1334,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front
+Dépendances:
 
 #### User Story: Générer des rapports détaillés
 
@@ -1199,6 +1343,7 @@ Type: Front
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir les statistiques de mes chasses
 
 #### User Story: Définir des objectifs mesurables
 
@@ -1207,6 +1352,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Compare mes performances avec des benchmarks
 
@@ -1215,6 +1361,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances: Voir les statistiques de mes chasses
 
 #### User Story: Gérer mon équipe avec différents accès
 
@@ -1223,6 +1370,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Voir les données démographiques des participants
 
@@ -1231,6 +1379,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Exporter mes données statistiques
 
@@ -1239,6 +1388,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Voir les statistiques de mes chasses
 
 ### Epic: Promotion & Acquisition utilisateurs
 
@@ -1249,6 +1399,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances:
 
 #### User Story: Proposer des bonus aux nouveaux utilisateurs
 
@@ -1257,6 +1408,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances:
 
 #### User Story: Personnaliser une page d'atterrissage
 
@@ -1265,6 +1417,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front
+Dépendances:
 
 #### User Story: Des outils de partage sur réseaux sociaux
 
@@ -1273,6 +1426,7 @@ Type: Front
 Estimation: M
 Priorité: Should
 Type: Front
+Dépendances:
 
 #### User Story: Suivre l'origine des utilisateurs acquis
 
@@ -1281,6 +1435,7 @@ Type: Front
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des codes promotionnels
 
 #### User Story: Des modèles d'emails promotionnels
 
@@ -1289,6 +1444,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des codes promotionnels
 
 #### User Story: Organiser des événements spéciaux
 
@@ -1297,6 +1453,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Cibler des utilisateurs par zone géographique
 
@@ -1305,6 +1462,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances:
 
 #### User Story: Des QR codes personnalisés pour mes promotions
 
@@ -1313,6 +1471,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer des codes promotionnels
 
 #### User Story: Créer des défis exclusifs pour ma marque
 
@@ -1321,6 +1480,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances:
 
 ### Epic: Gestion des campagnes
 
@@ -1331,6 +1491,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Should
 Type: Front + Back
+Dépendances:
 
 #### User Story: Définir la durée de ma campagne
 
@@ -1339,6 +1500,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Cibler des segments d'utilisateurs spécifiques
 
@@ -1347,6 +1509,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Suivre les métriques de ma campagne en temps réel
 
@@ -1355,6 +1518,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Programmer des actions automatisées
 
@@ -1363,6 +1527,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Personnaliser les messages de ma campagne
 
@@ -1371,6 +1536,7 @@ Type: Back
 Estimation: M
 Priorité: Should
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Dupliquer une campagne existante
 
@@ -1379,6 +1545,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Compare les performances de différentes campagnes
 
@@ -1387,6 +1554,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Intégrer mes campagnes à mes autres outils marketing
 
@@ -1395,6 +1563,7 @@ Type: Front + Back
 Estimation: XL
 Priorité: Won't
 Type: Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 #### User Story: Recevoir des alertes sur les performances
 
@@ -1403,6 +1572,7 @@ Type: Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Créer une campagne marketing liée à mes chasses
 
 ### Epic: Programme d'affiliation
 
@@ -1413,6 +1583,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Won't
 Type: Front + Back
+Dépendances:
 
 #### User Story: Générer des liens de parrainage
 
@@ -1421,6 +1592,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Devenir affilié
 
 #### User Story: Suivre mes commissions
 
@@ -1429,6 +1601,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Won't
 Type: Front + Back
+Dépendances: Générer des liens de parrainage
 
 #### User Story: Voir les statistiques de mes conversions
 
@@ -1437,6 +1610,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances: Générer des liens de parrainage
 
 #### User Story: Recevoir des paiements pour mes commissions
 
@@ -1445,6 +1619,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Back
+Dépendances: Suivre mes commissions
 
 #### User Story: Des outils promotionnels personnalisés
 
@@ -1453,6 +1628,7 @@ Type: Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances: Devenir affilié
 
 #### User Story: Des niveaux progressifs dans le programme
 
@@ -1461,6 +1637,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Back
+Dépendances: Devenir affilié
 
 #### User Story: Être notifié des nouvelles opportunités
 
@@ -1469,6 +1646,7 @@ Type: Back
 Estimation: M
 Priorité: Won't
 Type: Front + Back
+Dépendances: Devenir affilié
 
 #### User Story: Entrer un code de parrainage
 
@@ -1477,6 +1655,7 @@ Type: Front + Back
 Estimation: S
 Priorité: Could
 Type: Front + Back
+Dépendances: Devenir affilié
 
 #### User Story: Un tableau de bord dédié à mon activité
 
@@ -1485,6 +1664,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Won't
 Type: Front + Back
+Dépendances: Générer des liens de parrainage
 
 ### Epic: Rapports de performance
 
@@ -1495,6 +1675,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Should
 Type: Back
+Dépendances:
 
 #### User Story: Visualiser les données avec des graphiques
 
@@ -1503,6 +1684,7 @@ Type: Back
 Estimation: L
 Priorité: Should
 Type: Front
+Dépendances:
 
 #### User Story: Des analyses comparatives par période
 
@@ -1511,6 +1693,7 @@ Type: Front
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Visualiser les données avec des graphiques
 
 #### User Story: Filtrer mes rapports selon différents critères
 
@@ -1519,6 +1702,7 @@ Type: Front + Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Visualiser les données avec des graphiques
 
 #### User Story: Exporter mes rapports en différents formats
 
@@ -1527,6 +1711,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Visualiser les données avec des graphiques
 
 #### User Story: Programmer l'envoi automatique de rapports
 
@@ -1535,6 +1720,7 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Back
+Dépendances: Des rapports hebdomadaires automatiques
 
 #### User Story: Des insights basés sur mes données
 
@@ -1543,6 +1729,7 @@ Type: Back
 Estimation: XL
 Priorité: Won't
 Type: Back
+Dépendances: Visualiser les données avec des graphiques
 
 #### User Story: Des suggestions d'optimisation basées sur mes performances
 
@@ -1551,6 +1738,7 @@ Type: Back
 Estimation: XL
 Priorité: Won't
 Type: Back
+Dépendances: Visualiser les données avec des graphiques
 
 #### User Story: Personnaliser mes métriques clés
 
@@ -1559,6 +1747,7 @@ Type: Back
 Estimation: L
 Priorité: Could
 Type: Front + Back
+Dépendances: Visualiser les données avec des graphiques
 
 #### User Story: Partager mes rapports avec mon équipe
 
@@ -1567,3 +1756,4 @@ Type: Front + Back
 Estimation: M
 Priorité: Could
 Type: Front + Back
+Dépendances: Visualiser les données avec des graphiques
