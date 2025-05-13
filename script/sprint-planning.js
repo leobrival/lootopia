@@ -243,42 +243,6 @@ usLongChains.slice(0, 5).forEach((us, idx) => {
   );
 });
 
-// --- Export CSV us-critical.csv ---
-const usCriticalHeader = [
-  "Titre",
-  "Nb dépendants",
-  "Longueur chaîne",
-  "Suggestions refacto",
-];
-const usCriticalRows = [];
-// Top 10 dépendants
-usWithDependants.slice(0, 10).forEach((us) => {
-  usCriticalRows.push([
-    us.titre,
-    us.nbDependants,
-    us.chainLen,
-    us.chainLen > 1
-      ? "Découper/Mocker/Revoir dépendances/Prioriser livraison"
-      : "",
-  ]);
-});
-// Top 5 chaînes longues
-usLongChains.slice(0, 5).forEach((us) => {
-  usCriticalRows.push([
-    us.titre,
-    us.nbDependants,
-    us.chainLen,
-    "Découper/Mocker/Revoir dépendances/Prioriser livraison",
-  ]);
-});
-const usCriticalPath = path.join(__dirname, "../us-critical.csv");
-fs.writeFileSync(
-  usCriticalPath,
-  [usCriticalHeader.join(",")]
-    .concat(usCriticalRows.map((r) => r.join(",")))
-    .join("\n"),
-  "utf-8"
-);
 // --- Console résumé minifié ---
 console.log(`[STATS] Top 3 critiques:`);
 usWithDependants.slice(0, 3).forEach((us, i) => {

@@ -50,8 +50,8 @@ Sprint,Spécialisation,Charge (h),Titre,Epic,Estimation,Priorité,Dépendances,N
 3,back,6.0,"Désactiver temporairement les notifications","Système de notifications",S,should,"Recevoir des notifications push sur mon téléphone",1,0
 3,back,24.0,"Un système de récompenses progressives","Système de récompenses",M,should,"Gagner des récompenses pour mes découvertes",1,1
 4,front,24.0,"Voir un centre de notifications dans l'app","Système de notifications",M,must,"Recevoir des notifications push sur mon téléphone",1,0
-4,front,6.0,"être notifié des mises à jour importantes","Système de notifications",S,should,"Recevoir des notifications push sur mon téléphone",1,0
-4,back,6.0,"être notifié des mises à jour importantes","Système de notifications",S,should,"Recevoir des notifications push sur mon téléphone",1,0
+4,front,6.0,"Être notifié des mises à jour importantes","Système de notifications",S,should,"Recevoir des notifications push sur mon téléphone",1,0
+4,back,6.0,"Être notifié des mises à jour importantes","Système de notifications",S,should,"Recevoir des notifications push sur mon téléphone",1,0
 4,front,6.0,"Voir le nombre total de chasses complétées","Dashboard global (Metrics)",S,should,"",0,2
 4,back,6.0,"Voir le nombre total de chasses complétées","Dashboard global (Metrics)",S,should,"",0,2
 4,front,12.0,"Consulter ma distance totale parcourue","Dashboard global (Metrics)",M,should,"",0,0

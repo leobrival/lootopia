@@ -18,6 +18,4 @@ run("node script/calc-backlog-time.js");
 
 console.log("\nExports CSV générés :");
 console.log("- backlog.csv");
-console.log("- backlog-critical.csv");
 console.log("- sprint-planning.csv");
-console.log("- us-critical.csv");
