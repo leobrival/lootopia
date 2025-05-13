@@ -54,33 +54,4 @@ const rows = usList.map((us) => [
   titreToDependants[us.titre] || 0,
 ]);
 
-// --- Calcul usWithDependants et usLongChains pour stats console ---
-const usWithDependants = usList.map((us) => ({
-  titre: us.titre,
-  nbDependants: titreToDependants[us.titre] || 0,
-  chainLen: (us.dependances && us.dependances.length) || 0,
-}));
-const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);
-
 exportCsv(rows, header, CSV_OUT);
-console.log(`Exported ${usList.length} user stories to ${CSV_OUT}`);
-
-// --- Console résumé minifié ---
-console.log(`[STATS] US: ${usList.length}`);
-console.log(`[STATS] Top 3 dépendants:`);
-usWithDependants.slice(0, 3).forEach((us, i) => {
-  console.log(
-    `  ${i + 1}. ${us.titre} (dépendants: ${us.nbDependants}, chaîne: ${
-      us.chainLen
-    })`
-  );
-});
-console.log(`[STATS] Top 3 chaînes longues:`);
-usLongChains.slice(0, 3).forEach((us, i) => {
-  console.log(
-    `  ${i + 1}. ${us.titre} (chaîne: ${us.chainLen}, dépendants: ${
-      us.nbDependants
-    })`
-  );
-});
-console.log(`[STATS] Exports: backlog.csv`);

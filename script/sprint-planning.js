@@ -188,7 +188,6 @@ sprints.slice(0, 12).forEach((sprint, i) => {
 });
 
 fs.writeFileSync("sprint-planning.csv", csvRows.join("\n"), "utf8");
-console.log("[EXPORT] sprint-planning.csv généré");
 
 // --- MVP completion sprint ---
 function normalize(str) {
@@ -204,8 +203,6 @@ const mustShould = usList.filter(
     (us.priorite || "").toLowerCase().trim() === "should"
 );
 const mustShouldTitles = new Set(mustShould.map((u) => normalize(u.titre)));
-console.log("Titres mustShould uniques:", mustShouldTitles.size);
-console.log("Titres mustShould total:", mustShould.length);
 let doneUS = new Set();
 let mvpSprint = 0;
 for (let i = 0; i < sprints.length; i++) {
@@ -219,7 +216,6 @@ for (let i = 0; i < sprints.length; i++) {
     break;
   }
 }
-console.log(`[STATS] US: ${usList.length} | Sprints: ${sprints.length}`);
 if (doneUS.size === mustShouldTitles.size) {
   console.log(`[STATS] MVP prêt à la fin du sprint ${mvpSprint}`);
 } else {
@@ -227,7 +223,6 @@ if (doneUS.size === mustShouldTitles.size) {
     `[STATS] MVP NON ATTEINT (${doneUS.size}/${mustShouldTitles.size})`
   );
 }
-console.log(`[STATS] Exports: sprint-planning.csv, us-critical.csv`);
 
 // --- Focus sur les US avec chaîne de dépendances > 1 ---
 const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);

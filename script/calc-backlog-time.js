@@ -87,6 +87,9 @@ console.log(
   `[STATS] US: ${usList.length} | XS:${count.XS} S:${count.S} M:${count.M} L:${count.L} XL:${count.XL}`
 );
 console.log(
+  `[STATS] Team: Front: ${team.front} | Back: ${team.back} | Blockchain: ${team.blockchain}`
+);
+console.log(
   `[STATS] Total: ${totalDays.toFixed(1)}j (${totalHours.toFixed(
     0
   )}h) | Sprints: ${totalSprints} (eff. ${effectiveSprints}) | Debt: ${debtHours.toFixed(
