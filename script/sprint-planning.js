@@ -229,8 +229,14 @@ const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);
 usLongChains.sort((a, b) => b.chainLen - a.chainLen);
 console.log(`[STATS] Top 3 longues chaînes de dépendances:`);
 usLongChains.slice(0, 3).forEach((us, idx) => {
+  const usObj = usList.find((u) => u.titre === us.titre);
+  const nbDep = usObj && usObj.dependances ? usObj.dependances.length : 0;
+  const nbDependants =
+    titreToDependants[us.titre] !== undefined ? titreToDependants[us.titre] : 0;
   console.log(
-    `${idx + 1}. ${us.titre} (dépendants: ${us.nbDependants}, chaîne: ${
+    `${idx + 1}. ${
+      us.titre
+    } (dépendants: ${nbDependants}, dépendances: ${nbDep}, chaîne: ${
       us.chainLen
     })`
   );
@@ -239,8 +245,14 @@ usLongChains.slice(0, 3).forEach((us, idx) => {
 // --- Console résumé minifié ---
 console.log(`[STATS] Top 3 critiques:`);
 usWithDependants.slice(0, 3).forEach((us, i) => {
+  const usObj = usList.find((u) => u.titre === us.titre);
+  const nbDep = usObj && usObj.dependances ? usObj.dependances.length : 0;
+  const nbDependants =
+    titreToDependants[us.titre] !== undefined ? titreToDependants[us.titre] : 0;
   console.log(
-    `  ${i + 1}. ${us.titre} (dépendants: ${us.nbDependants}, chaîne: ${
+    `  ${i + 1}. ${
+      us.titre
+    } (dépendants: ${nbDependants}, dépendances: ${nbDep}, chaîne: ${
       us.chainLen
     })`
   );
