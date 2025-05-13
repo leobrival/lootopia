@@ -25,7 +25,7 @@ Lootopia est une plateforme immersive de chasse au trésor numérique, combinant
 
 ## 📅 Gestion de projet
 
-- **Jira** : [Board LP](https://supdevinci-po.atlassian.net/jira/software/projects/LP/)
+- **Jira** : [Board LP](https://supdevinci-po.atlassian.net/jira/software/projects/LP/boards/39)
 - **Figma** : [Board Lootopia](https://www.figma.com/board/0ewK97NYcmYfjvC4AgAEdt/Lootopia?node-id=0-1&t=P5ROSLGVY5SIbsHy-1)
 
 ---

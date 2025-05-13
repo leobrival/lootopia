@@ -13,8 +13,8 @@ function run(cmd) {
 
 run("node script/backlog_to_csv.js");
 run("node script/check-dependencies.js");
-run("node script/sprint-planning.js");
 run("node script/calc-backlog-time.js");
+run("node script/sprint-planning.js");
 
 console.log("\nExports CSV générés :");
 console.log("- backlog.csv");

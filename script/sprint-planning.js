@@ -227,14 +227,12 @@ if (doneUS.size === mustShouldTitles.size) {
 // --- Focus sur les US avec chaîne de dépendances > 1 ---
 const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);
 usLongChains.sort((a, b) => b.chainLen - a.chainLen);
-console.log(
-  "\n--- TOP 5 US avec la plus longue chaîne de dépendances (>1) ---"
-);
-usLongChains.slice(0, 5).forEach((us, idx) => {
+console.log(`[STATS] Top 3 longues chaînes de dépendances:`);
+usLongChains.slice(0, 3).forEach((us, idx) => {
   console.log(
-    `${idx + 1}. [${us.priorite.toUpperCase()}][${us.estimation}] ${
-      us.titre
-    } : chaîne = ${us.chainLen}, dépendants = ${us.nbDependants}`
+    `${idx + 1}. ${us.titre} (dépendants: ${us.nbDependants}, chaîne: ${
+      us.chainLen
+    })`
   );
 });
 
@@ -248,8 +246,80 @@ usWithDependants.slice(0, 3).forEach((us, i) => {
   );
 });
 
-// Nombre d'US par sprint
-console.log("\n[STATS] Nombre d'US par sprint :");
-sprints.forEach((sprint, i) => {
-  console.log(`  Sprint ${i + 1} : ${sprint.us.length} US`);
+// Affichage du nombre d'US par sprint (5 premiers, sur une ligne)
+const usPerSprint = sprints.slice(0, 5).map((sprint) => sprint.us.length);
+console.log(
+  `\n[STATS] Nombre d'US (5 premiers sprints) : [${usPerSprint.join(", ")}]`
+);
+
+// Affichage du nombre total de sprints avant le log MVP
+console.log(`[STATS] Nombre total de sprints : ${sprints.length}`);
+
+// --- Indicateurs avancés ---
+// 1. Vélocité moyenne par sprint
+const velocity = sprints.length
+  ? (usList.length / sprints.length).toFixed(2)
+  : 0;
+console.log(`[STATS] Vélocité moyenne par sprint : ${velocity} US/sprint`);
+
+// 2. Répartition des priorités par sprint
+const priorities = ["must", "should", "could", "won't"];
+const prioBySprint = sprints.slice(0, 5).map((sprint, i) => {
+  const prioCount = { must: 0, should: 0, could: 0, "won't": 0 };
+  sprint.us.forEach((us) => {
+    const p = (us.priorite || "").toLowerCase().trim();
+    if (prioCount[p] !== undefined) prioCount[p]++;
+  });
+  return prioCount;
 });
+console.log(`[STATS] Répartition des priorités (5 premiers sprints) :`);
+prioBySprint.forEach((p, i) => {
+  console.log(
+    `  Sprint ${i + 1} : must:${p.must} should:${p.should} could:${
+      p.could
+    } won't:${p["won't"]}`
+  );
+});
+
+// 3. Nombre d'US bloquées par dépendances non résolues (dans le backlog initial)
+const titresDone = new Set();
+sprints.forEach((sprint) =>
+  sprint.us.forEach((us) => titresDone.add(us.titre))
+);
+const usBloquees = usList.filter((us) =>
+  (us.dependances || []).some((dep) => !titresDone.has(dep))
+);
+console.log(
+  `[STATS] US bloquées par dépendances non résolues : ${usBloquees.length}`
+);
+
+// 4. Charge par rôle par sprint (5 premiers)
+console.log(`[STATS] Charge par rôle (5 premiers sprints) :`);
+sprints.slice(0, 5).forEach((sprint, i) => {
+  const load = { front: 0, back: 0, blockchain: 0 };
+  sprint.us.forEach((us) => {
+    const type = (us.type || "").toLowerCase();
+    if (type.includes("front")) load.front += us.estimationHours || 0;
+    if (type.includes("back")) load.back += us.estimationHours || 0;
+    if (type.includes("blockchain")) load.blockchain += us.estimationHours || 0;
+  });
+  console.log(
+    `  Sprint ${i + 1} : Front:${load.front}h Back:${load.back}h Blockchain:${
+      load.blockchain
+    }h`
+  );
+});
+
+// 5. Nombre d'US livrables sans dépendance
+const usSansDep = usList.filter(
+  (us) => !us.dependances || us.dependances.length === 0
+);
+console.log(`[STATS] US livrables sans dépendance : ${usSansDep.length}`);
+
+// 6. Nombre d'US restantes après le MVP
+const usLivrees = new Set();
+sprints
+  .slice(0, mvpSprint)
+  .forEach((sprint) => sprint.us.forEach((us) => usLivrees.add(us.titre)));
+const usRestantes = usList.filter((us) => !usLivrees.has(us.titre));
+console.log(`[STATS] US restantes après MVP : ${usRestantes.length}`);
