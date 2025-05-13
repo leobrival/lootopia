@@ -1,0 +1,16 @@
+Titre,Nb dépendants,Longueur chaîne,Suggestions refacto
+Créer une chasse au trésor simple,13,0,
+Recevoir une récompense pour ma connexion quotidienne,12,0,
+Recevoir des notifications push sur mon téléphone,11,0,
+Voir mon solde de monnaie virtuelle,11,0,
+Créer un compte avec email et mot de passe,9,0,
+Créer une chasse avec plusieurs étapes,9,1,
+Créer des énigmes textuelles simples,9,0,
+Collecter des artefacts uniques (NFT),9,0,
+Créer une campagne marketing liée à mes chasses,9,0,
+Tutoriel interactif pour comprendre le jeu,7,0,
+Gagner des points d'expérience en complétant des chasses,3,3,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Sécuriser mon wallet avec authentification,3,2,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Partager mes récompenses sur les réseaux sociaux,0,2,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Être notifié des récompenses disponibles,0,2,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Être informé des messages reçus,0,2,Découper/Mocker/Revoir dépendances/Prioriser livraison

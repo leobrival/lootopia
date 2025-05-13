@@ -4,15 +4,18 @@ const {
   team,
   readBacklogCsv,
   extractUserStories,
+  parseBacklogMd,
+  computeDependencyScore,
+  getDependencyChainLength,
+  exportCsv,
 } = require("./backlog-shared");
 const fs = require("fs");
+const path = require("path");
 
 const records = readBacklogCsv();
 
 // 1. On prépare les US avec toutes les infos utiles
-const usList = extractUserStories(records);
-
-console.log(usList.map((u) => [u.titre, u.priorite]));
+const usList = parseBacklogMd();
 
 // 2. On trie d'abord par estimation au sein de chaque Epic, puis par priorité globale
 const prioOrder = { must: 1, should: 2, could: 3, "won't": 4 };
@@ -38,56 +41,8 @@ for (const epic of Object.keys(epicGroups)) {
   usListOrdered = usListOrdered.concat(epicGroups[epic]);
 }
 
-// --- Dépendance chain length (à placer AVANT usWithDependants) ---
-function getDependencyChainLength(us, titreToUs, visited = new Set()) {
-  if (visited.has(us.titre)) return 0;
-  visited.add(us.titre);
-  if (!us.dependances.length) return 0;
-  let maxDepth = 0;
-  for (const dep of us.dependances) {
-    const depUs = titreToUs[dep];
-    if (depUs) {
-      maxDepth = Math.max(
-        maxDepth,
-        1 + getDependencyChainLength(depUs, titreToUs, new Set(visited))
-      );
-    }
-  }
-  return maxDepth;
-}
-
 // --- Map titre -> US (à placer AVANT usWithDependants) ---
 const titreToUs = Object.fromEntries(usList.map((u) => [u.titre, u]));
-
-// --- PATCH: score de dépendance pour chaque US ---
-function computeDependencyScore(usList) {
-  // Map titre -> US
-  const titreToUs = Object.fromEntries(usList.map((u) => [u.titre, u]));
-  // Pour chaque US, compte combien d'US dépendent d'elle (direct ou indirect)
-  function countDependants(titre, visited = new Set()) {
-    if (visited.has(titre)) return 0;
-    visited.add(titre);
-    let count = 0;
-    for (const u of usList) {
-      if (u.dependances.includes(titre)) {
-        count += 1 + countDependants(u.titre, visited);
-      }
-    }
-    return count;
-  }
-  for (const us of usList) {
-    us.dependencyScore = countDependants(us.titre);
-  }
-}
-computeDependencyScore(usList);
-// Trie par score décroissant, puis priorité, puis estimation
-usList.sort((a, b) => {
-  if (prioOrder[a.priorite] !== prioOrder[b.priorite])
-    return prioOrder[a.priorite] - prioOrder[b.priorite];
-  if (sizeOrder[a.estimation] !== sizeOrder[b.estimation])
-    return sizeOrder[a.estimation] - sizeOrder[b.estimation];
-  return b.dependencyScore - a.dependencyScore;
-});
 
 // --- Calcul usWithDependants (utilisé plus bas) ---
 const usWithDependants = usList.map((us) => ({
@@ -109,8 +64,6 @@ const teamCapacity = {};
 for (const role of Object.keys(team)) {
   teamCapacity[role] = team[role] * SPRINT_DAYS * HOURS_PER_DEV_PER_DAY;
 }
-console.log(`Capacité d'un sprint par spécialisation :`, teamCapacity);
-console.log(`Composition équipe :`, team);
 
 function getUsLoadByRole(us) {
   // Répartition équitable si multi-spécialité
@@ -183,27 +136,6 @@ for (let sprintNum = 1; sprintNum <= 50; sprintNum++) {
   if (backlog.length === 0) break;
 }
 
-// 4. Affichage
-console.log("\n--- Sprint Planning (12 premiers sprints) ---");
-sprints.slice(0, 12).forEach((sprint, i) => {
-  const sprintHours = Object.values(sprint.load).reduce((a, b) => a + b, 0);
-  console.log(`\nSprint ${i + 1} (${sprintHours.toFixed(1)}h):`);
-  console.log(
-    `  Charge: Front ${sprint.load.front?.toFixed(1) || 0}h | Back ${
-      sprint.load.back?.toFixed(1) || 0
-    }h | Blockchain ${sprint.load.blockchain?.toFixed(1) || 0}h`
-  );
-  sprint.us.forEach((us) => {
-    console.log(
-      `[${us.dependencyScore}] [${us.priorite.toUpperCase()}][${
-        us.estimation
-      }] ${us.titre} (${us.epic})`
-    );
-    if (us.dependances.length)
-      console.log(`    Dépendances: ${us.dependances.join(", ")}`);
-  });
-});
-
 // 5. Export CSV
 const csvRows = [
   [
@@ -256,7 +188,7 @@ sprints.slice(0, 12).forEach((sprint, i) => {
 });
 
 fs.writeFileSync("sprint-planning.csv", csvRows.join("\n"), "utf8");
-console.log("\nExport CSV : sprint-planning.csv");
+console.log("[EXPORT] sprint-planning.csv généré");
 
 // --- MVP completion sprint ---
 function normalize(str) {
@@ -282,26 +214,20 @@ for (let i = 0; i < sprints.length; i++) {
       doneUS.add(normalize(us.titre));
     }
   }
-  console.log(
-    `Sprint ${i + 1}: ${doneUS.size}/${
-      mustShouldTitles.size
-    } US Must+Should complétées`
-  );
   if (doneUS.size === mustShouldTitles.size) {
     mvpSprint = i + 1;
     break;
   }
 }
-if (doneUS.size !== mustShouldTitles.size) {
-  const missing = [...mustShouldTitles].filter((t) => !doneUS.has(t));
+console.log(`[STATS] US: ${usList.length} | Sprints: ${sprints.length}`);
+if (doneUS.size === mustShouldTitles.size) {
+  console.log(`[STATS] MVP prêt à la fin du sprint ${mvpSprint}`);
+} else {
   console.log(
-    `US Must+Should manquantes après ${sprints.length} sprints:`,
-    missing
+    `[STATS] MVP NON ATTEINT (${doneUS.size}/${mustShouldTitles.size})`
   );
 }
-console.log(
-  `\nLe MVP (Must + Should) est complété à la fin du sprint ${mvpSprint}.`
-);
+console.log(`[STATS] Exports: sprint-planning.csv, us-critical.csv`);
 
 // --- Focus sur les US avec chaîne de dépendances > 1 ---
 const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);
@@ -316,9 +242,55 @@ usLongChains.slice(0, 5).forEach((us, idx) => {
     } : chaîne = ${us.chainLen}, dépendants = ${us.nbDependants}`
   );
 });
-console.log("\n--- Suggestions de refacto pour ces chaînes critiques ---");
+
+// --- Export CSV us-critical.csv ---
+const usCriticalHeader = [
+  "Titre",
+  "Nb dépendants",
+  "Longueur chaîne",
+  "Suggestions refacto",
+];
+const usCriticalRows = [];
+// Top 10 dépendants
+usWithDependants.slice(0, 10).forEach((us) => {
+  usCriticalRows.push([
+    us.titre,
+    us.nbDependants,
+    us.chainLen,
+    us.chainLen > 1
+      ? "Découper/Mocker/Revoir dépendances/Prioriser livraison"
+      : "",
+  ]);
+});
+// Top 5 chaînes longues
 usLongChains.slice(0, 5).forEach((us) => {
+  usCriticalRows.push([
+    us.titre,
+    us.nbDependants,
+    us.chainLen,
+    "Découper/Mocker/Revoir dépendances/Prioriser livraison",
+  ]);
+});
+const usCriticalPath = path.join(__dirname, "../us-critical.csv");
+fs.writeFileSync(
+  usCriticalPath,
+  [usCriticalHeader.join(",")]
+    .concat(usCriticalRows.map((r) => r.join(",")))
+    .join("\n"),
+  "utf-8"
+);
+// --- Console résumé minifié ---
+console.log(`[STATS] Top 3 critiques:`);
+usWithDependants.slice(0, 3).forEach((us, i) => {
   console.log(
-    `- ${us.titre} :\n  ➔ Suggestions :\n    • Découper l'US ou ses dépendances pour réduire la profondeur.\n    • Mocker les dépendances pour débloquer les suivantes.\n    • Revoir la nécessité de chaque dépendance (challenge métier/tech).\n    • Prioriser la livraison de cette US et de ses dépendances directes.`
+    `  ${i + 1}. ${us.titre} (dépendants: ${us.nbDependants}, chaîne: ${
+      us.chainLen
+    })`
   );
+});
+
+// Nombre d'US par sprint
+console.log("\n[STATS] Nombre d'US par sprint :");
+sprints.forEach((sprint, i) => {
+  console.log(`  Sprint ${i + 1} : ${sprint.us.length} US`);
 });

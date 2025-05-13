@@ -1,0 +1,16 @@
+Titre,Nb dépendants,Longueur chaîne,Suggestions refacto
+Créer un compte avec email et mot de passe,,0,
+Se connecter à son compte,,1,
+Personnaliser son profil,,1,
+Récupérer son mot de passe oublié,,1,
+Me connecter via Google/Facebook,,0,
+Modifier mes informations personnelles,,1,
+Supprimer mon compte,,1,
+Gérer mes paramètres de confidentialité,,1,
+Voir mon historique de chasses,,1,
+Lier mes réseaux sociaux à mon profil,,1,
+Voir ma progression actuelle,,3,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Débloquer de nouvelles fonctionnalités avec mon niveau,,3,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Consulter les avantages du niveau suivant,,3,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Compare mon niveau avec d'autres joueurs,,3,Découper/Mocker/Revoir dépendances/Prioriser livraison
+Des badges pour mes accomplissements,,3,Découper/Mocker/Revoir dépendances/Prioriser livraison

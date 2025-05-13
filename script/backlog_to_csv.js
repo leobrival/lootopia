@@ -1,101 +1,17 @@
-const fs = require("fs");
+const {
+  parseBacklogMd,
+  computeDependencyScore,
+  exportCsv,
+  escapeCsv,
+} = require("./backlog-shared");
 const path = require("path");
+const fs = require("fs");
 
 const BACKLOG_MD = path.join(__dirname, "../.memory-bank/strategic/backlog.md");
 const CSV_OUT = path.join(__dirname, "../backlog.csv");
 
-const THEME_RE = /^## THEME: (.+)/;
-const EPIC_RE = /^### Epic: (.+)/;
-const USER_STORY_RE = /^- (En tant.*?), (je veux .+)/;
-const ESTIMATION_RE = /^Estimation: (.+)/;
-const PRIORITE_RE = /^Priorit[ée]: (.+)/;
-const TYPE_RE = /^Type: (.+)/;
-const CAPABILITIES_RE = /^Capabilities: \[(.+)\]/;
-const DEPENDANCES_RE = /^Dépendances: ?(.*)/;
-const US_HEADER_RE = /^#### User Story: (.+)/;
-
-const rows = [];
-let currentTheme = null;
-let currentEpic = null;
-let currentStory = null;
-let currentEstimation = null;
-let currentPriorite = null;
-let currentPersona = null;
-let currentType = null;
-let currentCapabilities = null;
-let currentDependances = null;
-let currentTitle = null;
-let pendingDependances = null;
-
-const lines = fs.readFileSync(BACKLOG_MD, "utf-8").split("\n");
-for (let line of lines) {
-  line = line.trim();
-  let m;
-  if ((m = THEME_RE.exec(line))) {
-    currentTheme = m[1];
-  } else if ((m = EPIC_RE.exec(line))) {
-    currentEpic = m[1];
-  } else if ((m = US_HEADER_RE.exec(line))) {
-    currentTitle = m[1].trim();
-  } else if ((m = DEPENDANCES_RE.exec(line))) {
-    pendingDependances = m[1]
-      .split(",")
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .join(";");
-  } else if ((m = USER_STORY_RE.exec(line))) {
-    currentPersona = m[1];
-    currentStory = m[2];
-    currentEstimation = null;
-    currentPriorite = null;
-    currentType = null;
-    currentDependances = null;
-  } else if ((m = ESTIMATION_RE.exec(line))) {
-    currentEstimation = m[1];
-  } else if ((m = PRIORITE_RE.exec(line))) {
-    currentPriorite = m[1];
-  } else if ((m = TYPE_RE.exec(line))) {
-    currentType = m[1];
-  } else if (currentStory && currentPersona && currentPriorite && line === "") {
-    if (!currentDependances && pendingDependances) {
-      currentDependances = pendingDependances;
-      pendingDependances = null;
-    }
-    rows.push([
-      currentTheme,
-      currentEpic,
-      `${currentPersona}, ${currentStory}`,
-      currentTitle,
-      currentEstimation,
-      currentPriorite,
-      currentType || "",
-      currentCapabilities ? currentCapabilities.join(";") : "",
-      currentDependances || "",
-    ]);
-    currentStory = null;
-    currentPersona = null;
-    currentType = null;
-    currentCapabilities = null;
-    currentTitle = null;
-    currentDependances = null;
-    pendingDependances = null;
-  } else if ((m = CAPABILITIES_RE.exec(line))) {
-    currentCapabilities = m[1].split(",").map((s) => s.trim());
-  }
-  if ((m = USER_STORY_RE.exec(line)) && pendingDependances) {
-    currentDependances = pendingDependances;
-    pendingDependances = null;
-  }
-}
-
-function escapeCsv(val) {
-  if (val == null) return "";
-  val = String(val); // always treat as string
-  if (val.includes(",") || val.includes('"') || val.includes("\n")) {
-    return '"' + val.replace(/"/g, '""') + '"';
-  }
-  return val;
-}
+const usList = parseBacklogMd(BACKLOG_MD);
+computeDependencyScore(usList);
 
 const header = [
   "Theme",
@@ -113,34 +29,93 @@ const header = [
 
 // Build a map titre -> dépendants count
 const titreToDependants = {};
-rows.forEach((row) => {
-  const titre = row[3];
-  titreToDependants[titre] = 0;
+usList.forEach((us) => {
+  titreToDependants[us.titre] = 0;
 });
-rows.forEach((row) => {
-  const dependances = (row[8] || "")
-    .split(/;|,/)
-    .map((s) => s.trim())
-    .filter(Boolean);
-  dependances.forEach((dep) => {
+usList.forEach((us) => {
+  (us.dependances || []).forEach((dep) => {
     if (dep && titreToDependants[dep] !== undefined) {
       titreToDependants[dep]++;
     }
   });
 });
 
-const csv = [header.map(escapeCsv).join(",")]
-  .concat(
-    rows.map((row) => {
-      const dependances = row[8] || "";
-      const nbDep = dependances
-        ? dependances.split(/;|,/).filter(Boolean).length
-        : 0;
-      const nbDependants = titreToDependants[row[3]] || 0;
-      return row.concat(nbDep, nbDependants).map(escapeCsv).join(",");
-    })
-  )
-  .join("\n");
+const rows = usList.map((us) => [
+  us.theme,
+  us.epic,
+  us.userStory,
+  us.titre,
+  us.estimation,
+  us.priorite,
+  us.type,
+  us.capabilities,
+  (us.dependances || []).join(";"),
+  (us.dependances || []).length,
+  titreToDependants[us.titre] || 0,
+]);
 
-fs.writeFileSync(CSV_OUT, csv, "utf-8");
-console.log(`Exported ${rows.length} user stories to ${CSV_OUT}`);
+exportCsv(rows, header, CSV_OUT);
+console.log(`Exported ${usList.length} user stories to ${CSV_OUT}`);
+
+// --- Export CSV backlog-critical.csv ---
+const usCriticalHeader = [
+  "Titre",
+  "Nb dépendants",
+  "Longueur chaîne",
+  "Suggestions refacto",
+];
+const usCriticalRows = [];
+const usWithDependants = usList.map((us) => ({
+  titre: us.titre,
+  nbDependants: titreToDependants[us.titre] || 0,
+  chainLen: (us.dependances && us.dependances.length) || 0,
+}));
+usWithDependants.sort((a, b) => b.nbDependants - a.nbDependants);
+const usLongChains = usWithDependants.filter((us) => us.chainLen > 1);
+// Top 10 dépendants
+usWithDependants.slice(0, 10).forEach((us) => {
+  usCriticalRows.push([
+    us.titre,
+    us.nbDependants,
+    us.chainLen,
+    us.chainLen > 1
+      ? "Découper/Mocker/Revoir dépendances/Prioriser livraison"
+      : "",
+  ]);
+});
+// Top 5 chaînes longues
+usLongChains.slice(0, 5).forEach((us) => {
+  usCriticalRows.push([
+    us.titre,
+    us.nbDependants,
+    us.chainLen,
+    "Découper/Mocker/Revoir dépendances/Prioriser livraison",
+  ]);
+});
+const usCriticalPath = path.join(__dirname, "../backlog-critical.csv");
+fs.writeFileSync(
+  usCriticalPath,
+  [usCriticalHeader.join(",")]
+    .concat(usCriticalRows.map((r) => r.join(",")))
+    .join("\n"),
+  "utf-8"
+);
+// --- Console résumé minifié ---
+console.log(`[STATS] US: ${usList.length}`);
+console.log(`[STATS] Top 3 dépendants:`);
+usWithDependants.slice(0, 3).forEach((us, i) => {
+  console.log(
+    `  ${i + 1}. ${us.titre} (dépendants: ${us.nbDependants}, chaîne: ${
+      us.chainLen
+    })`
+  );
+});
+console.log(`[STATS] Top 3 chaînes longues:`);
+usLongChains.slice(0, 3).forEach((us, i) => {
+  console.log(
+    `  ${i + 1}. ${us.titre} (chaîne: ${us.chainLen}, dépendants: ${
+      us.nbDependants
+    })`
+  );
+});
+console.log(`[STATS] Exports: backlog.csv, backlog-critical.csv`);

@@ -553,7 +553,7 @@ Priorité: Could
 Type: Back
 Dépendances:
 
-#### User Story: être notifié des mises à jour importantes
+#### User Story: Être notifié des mises à jour importantes
 
 Capabilities: [notification]
 

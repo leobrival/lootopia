@@ -1,5 +1,6 @@
 const fs = require("fs");
 const { parse } = require("csv-parse/sync");
+const path = require("path");
 
 const csv = fs.readFileSync("backlog.csv", "utf8");
 const records = parse(csv, { columns: true, skip_empty_lines: true });
@@ -27,10 +28,16 @@ for (const row of records) {
 }
 
 if (orphelines.length === 0) {
-  console.log("✅ Toutes les dépendances pointent vers une US existante.");
+  console.log("[OK] 0 dépendance orpheline.");
 } else {
-  console.log("❌ Dépendances orphelines trouvées :");
-  for (const o of orphelines) {
-    console.log(`- "${o.us}" dépend de "${o.dependance}" (introuvable)`);
+  console.warn(`[WARN] ${orphelines.length} dépendances orphelines.`);
+  console.log("[DETAIL] Exemples de dépendances orphelines :");
+  orphelines.slice(0, 10).forEach((o, i) => {
+    console.log(
+      `  ${i + 1}. US: '${o.us}' → dépendance inconnue: '${o.dependance}'`
+    );
+  });
+  if (orphelines.length > 10) {
+    console.log(`  ... (${orphelines.length - 10} autres non affichées)`);
   }
 }
