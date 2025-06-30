@@ -335,3 +335,10 @@ sprints
   .forEach((sprint) => sprint.us.forEach((us) => usLivrees.add(us.titre)));
 const usRestantes = usList.filter((us) => !usLivrees.has(us.titre));
 console.log(`[STATS] US restantes après MVP : ${usRestantes.length}`);
+
+console.log(
+  "  |\\_______/|\n" +
+    " /           \\\n" +
+    "/_▲         ▲_\\\n" +
+    "    ==\\▼/=="
+);
