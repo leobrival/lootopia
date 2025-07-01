@@ -1,7 +1,7 @@
 # Userflow Global - LOOTOPIA
 
 ```mermaid
-flowchart RL
+flowchart LR
     Start([Début]) --> Discovery{Découverte de LOOTOPIA}
 
     %% AWARENESS - Découverte
