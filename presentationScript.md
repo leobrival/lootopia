@@ -60,3 +60,12 @@ Retour sur investissement
 ## Backlog
 
 - Liste priorisée des tâches et fonctionnalités à réaliser
+
+---
+
+Face cam (10 min)
+
+Demo (Ordinateur 10 min)
+
+- User flow
+- User journey

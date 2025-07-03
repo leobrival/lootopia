@@ -1,5 +1,19 @@
 # Document technique
 
+## Stack Technique
+
+- Next.js pour le front web
+- React Native pour le mobile
+- AdonisJS pour les microservices backend
+- PostgreSQL pour la base de données principale
+- Redis pour le cache et la gestion des sessions
+- AWS/GCP pour l'infrastructure cloud
+- ARKit/ARCore pour la Réalité Augmentée
+- Stripe pour la gestion de la monnaie virtuelle
+- Docker pour le conteneurisation
+- Github Actions pour la CI/CD
+- OpenAI pour l'IA
+
 ## Argumentation des hypothèses prises pour le projet
 
 ## Base de données
